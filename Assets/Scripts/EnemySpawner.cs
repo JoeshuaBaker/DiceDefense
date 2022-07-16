@@ -22,6 +22,13 @@ public class EnemySpawner : MonoBehaviour
             Debug.LogWarning("Fill up Enemy spawner with wave data or path data.");
         }
         timer = 0f;
+
+        Wave[] childWaves = GetComponentsInChildren<Wave>();
+        waves = new WaveData[childWaves.Length];
+        for(int i = 0; i < childWaves.Length; i++)
+        {
+            waves[i] = childWaves[i].data;
+        }
     }
 
     // Update is called once per frame

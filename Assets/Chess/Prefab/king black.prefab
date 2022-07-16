@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23986310822093114}
   - component: {fileID: 3837883707324887071}
   - component: {fileID: 900729314988645328}
+  - component: {fileID: 6594030326285405753}
   m_Layer: 0
   m_Name: king black
   m_TagString: Untagged
@@ -119,3 +120,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a2d0536ee11e54065bce3df96d6d44c2, type: 3}
+--- !u!54 &6594030326285405753
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822731811085762}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

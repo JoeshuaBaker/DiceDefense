@@ -47,6 +47,37 @@ MonoBehaviour:
   handleStyle: 0
   _handle1: {x: 0, y: 0, z: 0.28}
   _handle2: {x: -0, y: -0, z: -0.28}
+--- !u!1 &286849709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 286849710}
+  m_Layer: 0
+  m_Name: Waves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &286849710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286849709}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 622680704}
+  m_Father: {fileID: 5226573668255149487}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &436939348
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +125,85 @@ MonoBehaviour:
   handleStyle: 0
   _handle1: {x: -0.28, y: 0, z: 0}
   _handle2: {x: 0.28, y: -0, z: -0}
+--- !u!1 &622680703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622680704}
+  - component: {fileID: 622680705}
+  m_Layer: 0
+  m_Name: Wave (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622680704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622680703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 286849710}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &622680705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622680703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7296324a4c89e5e4a97ee6813b04a197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data:
+    enemies:
+    - type: 0
+      hp: 10
+      speed: 1
+      count: 5
+      time: 1
+    - type: 1
+      hp: 20
+      speed: 0.75
+      count: 2
+      time: 2.5
+    - type: 2
+      hp: 4
+      speed: 4
+      count: 2
+      time: 4
+    - type: 3
+      hp: 15
+      speed: 1.25
+      count: 2
+      time: 3
+    - type: 4
+      hp: 75
+      speed: 2.5
+      count: 1
+      time: 0
+    - type: 5
+      hp: 250
+      speed: 0.5
+      count: 1
+      time: 0
+    restTime: 5
+    repeats: 0
+    enemyId: 0
+    finished: 0
 --- !u!1 &1235598352
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +413,7 @@ Transform:
   m_Children:
   - {fileID: 828970403502906246}
   - {fileID: 1793887317}
+  - {fileID: 286849710}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -333,41 +444,6 @@ MonoBehaviour:
   - {fileID: 3837883707324887071, guid: cd47671bc858649ed8445e605149f3e8, type: 3}
   path: {fileID: 1793887316}
   enemyParent: {fileID: 828970403502906246}
-  waves:
-  - enemies:
-    - type: 0
-      hp: 10
-      speed: 1
-      count: 5
-      time: 1
-    - type: 1
-      hp: 20
-      speed: 0.5
-      count: 2
-      time: 1
-    - type: 2
-      hp: 5
-      speed: 4
-      count: 2
-      time: 2
-    restTime: 5
-    repeats: 0
-    enemyId: 0
-    finished: 0
-  - enemies:
-    - type: 4
-      hp: 50
-      speed: 10
-      count: 1
-      time: 0
-    - type: 5
-      hp: 1000
-      speed: 0.1
-      count: 1
-      time: 0
-    restTime: 25
-    repeats: 1
-    enemyId: 0
-    finished: 0
+  waves: []
   spawning: 0
   waveId: -1

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23471427938731296}
   - component: {fileID: 3739502718544970326}
   - component: {fileID: 4445196845025995812}
+  - component: {fileID: 6905629206779690429}
   m_Layer: 0
   m_Name: bishop black
   m_TagString: Untagged
@@ -119,3 +120,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: fb83f00e031a94dd9abf2e72a18251c0, type: 3}
+--- !u!54 &6905629206779690429
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916680518618882}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
