@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33899922585379038}
   - component: {fileID: 23047484882299092}
   - component: {fileID: 1789506652939761515}
+  - component: {fileID: 2160169153381602939}
   m_Layer: 0
   m_Name: knight black
   m_TagString: Untagged
@@ -95,7 +96,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    enemyType: 0
+    type: 0
     hp: 0
     speed: 0
-    path: {fileID: 0}
+    count: 1
+    time: 1
+  finished: 0
+  slowPercent: 0
+  pathLength: 0
+  timeToComplete: 0
+--- !u!64 &2160169153381602939
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830534316869998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 99f0d192cd83c408381f8f6112fdf3dc, type: 3}

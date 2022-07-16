@@ -70,14 +70,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-Assets/Chess/Fbx/bishop.fbx
-Assets/Chess/Fbx/board.fbx
-Assets/Chess/Fbx/king.fbx
-Assets/Chess/Fbx/knight.fbx
-Assets/Chess/Fbx/pawn.fbx
-Assets/Chess/Fbx/queen.fbx
-Assets/Chess/Fbx/rook.fbx
-Assets/Chess/Texture/chess_board.jpg
-Assets/felt.jpg
-Assets/felt1024.png
-Assets/feltSprite.jpg
+
+
+# Wwise Ignores
+*.cache
+*.akd
+*.prof
+*.validationcache
+*/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
