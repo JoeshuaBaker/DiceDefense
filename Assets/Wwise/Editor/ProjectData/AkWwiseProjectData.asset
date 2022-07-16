@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 249031f42aae644d81785632ab3fc85b
     GuidInternal: 
-    m_lastTime: -8585436644011795282
+    m_lastTime: -8585436582791090840
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: ab4bd4933c136841bc5690a80557754e
     GuidInternal: 
-    m_lastTime: -8585436644012882030
+    m_lastTime: -8585436582791150844
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 5622598151565348a22368de5d40974d
     GuidInternal: 
-    m_lastTime: -8585436644012692601
+    m_lastTime: -8585436582791100841
     List: []
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
@@ -80,7 +80,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 89b1e0298345d04b91f1f341f7417a1f
     GuidInternal: 
-    m_lastTime: -8585436644012752436
+    m_lastTime: -8585436582791150844
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bb69f39d8b911149abfd232230076d07
     GuidInternal: 
-    m_lastTime: -8585436644011176930
+    m_lastTime: -8585436582791150844
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 9f51d7ce460f624b9feefbcaa35cd162
     GuidInternal: 
-    m_lastTime: -8585436644011116848
+    m_lastTime: -8585436582791090840
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -122,8 +122,122 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a31277c63b3ee14cb7fba8cf3b58799c
     GuidInternal: 
-    m_lastTime: -8585436644010927331
-    List: []
+    m_lastTime: -8585436582791090840
+    List:
+    - name: ProjectileType
+      guid: e5214f04ebdda14093fadd4173d80ddf
+      id: 2011258708
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a31277c63b3ee14cb7fba8cf3b58799c
+      - ElementName: ProjectileType
+        ObjectType: 11
+        guid: e5214f04ebdda14093fadd4173d80ddf
+      Path: Switches\Default Work Unit\ProjectileType
+      values:
+      - name: Bomb
+        guid: 739affb777b4a642b8c789cc72f32905
+        id: 1727945837
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a31277c63b3ee14cb7fba8cf3b58799c
+        - ElementName: ProjectileType
+          ObjectType: 11
+          guid: e5214f04ebdda14093fadd4173d80ddf
+        - ElementName: Bomb
+          ObjectType: 10
+          guid: 739affb777b4a642b8c789cc72f32905
+      - name: Homing
+        guid: ed74fa1211f1cb40824cb8148f8d5950
+        id: 2623859709
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a31277c63b3ee14cb7fba8cf3b58799c
+        - ElementName: ProjectileType
+          ObjectType: 11
+          guid: e5214f04ebdda14093fadd4173d80ddf
+        - ElementName: Homing
+          ObjectType: 10
+          guid: ed74fa1211f1cb40824cb8148f8d5950
+      - name: Ice
+        guid: 5f1cab51bd23e44db9c0eb7b199cad3b
+        id: 344481046
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a31277c63b3ee14cb7fba8cf3b58799c
+        - ElementName: ProjectileType
+          ObjectType: 11
+          guid: e5214f04ebdda14093fadd4173d80ddf
+        - ElementName: Ice
+          ObjectType: 10
+          guid: 5f1cab51bd23e44db9c0eb7b199cad3b
+      - name: Pierce
+        guid: 6562fffcb0a52b499b96e159113872dd
+        id: 1503331101
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a31277c63b3ee14cb7fba8cf3b58799c
+        - ElementName: ProjectileType
+          ObjectType: 11
+          guid: e5214f04ebdda14093fadd4173d80ddf
+        - ElementName: Pierce
+          ObjectType: 10
+          guid: 6562fffcb0a52b499b96e159113872dd
+      - name: Rang
+        guid: baa3d3e1e788d04ebf265cfe978268a2
+        id: 2060181539
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a31277c63b3ee14cb7fba8cf3b58799c
+        - ElementName: ProjectileType
+          ObjectType: 11
+          guid: e5214f04ebdda14093fadd4173d80ddf
+        - ElementName: Rang
+          ObjectType: 10
+          guid: baa3d3e1e788d04ebf265cfe978268a2
+      - name: Std
+        guid: a082d6ef506a254cbb082c486fe68233
+        id: 628126516
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: a31277c63b3ee14cb7fba8cf3b58799c
+        - ElementName: ProjectileType
+          ObjectType: 11
+          guid: e5214f04ebdda14093fadd4173d80ddf
+        - ElementName: Std
+          ObjectType: 10
+          guid: a082d6ef506a254cbb082c486fe68233
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -136,7 +250,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: fa574d79e39cdf4abf766ed0031771e7
     GuidInternal: 
-    m_lastTime: -8585436644011545665
+    m_lastTime: -8585436582791090840
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 
