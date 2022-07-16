@@ -1,0 +1,274 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0383d9979accac4887978fb5549bf2d, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: bdf72419e3f68848b95d7b903f659314
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: bdf72419e3f68848b95d7b903f659314
+    GuidInternal: 
+    m_lastTime: -8585436837168545656
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: b523a29038c8ba429661219ec26a50e6
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: b523a29038c8ba429661219ec26a50e6
+    GuidInternal: 
+    m_lastTime: -8585436837169712257
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b523a29038c8ba429661219ec26a50e6
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 83312ad8768c174eb91b7bd5173c9a2b
+    ParentPath: SoundBanks\Default Work Unit
+    guid: 83312ad8768c174eb91b7bd5173c9a2b
+    GuidInternal: 
+    m_lastTime: -8585436837170510410
+    List: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 46c80c5be4819d498fda24bd420a4405
+    ParentPath: Events\Default Work Unit
+    guid: 46c80c5be4819d498fda24bd420a4405
+    GuidInternal: 
+    m_lastTime: -8585436673932065492
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: d84b24248460634d9b73c08e1a7a11ee
+    ParentPath: Game Parameters\Default Work Unit
+    guid: d84b24248460634d9b73c08e1a7a11ee
+    GuidInternal: 
+    m_lastTime: -8585436673932165504
+    List:
+    - name: RTPCDiceCount
+      guid: 927564ede2b09e40bdec00174667270c
+      id: 1508652990
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: d84b24248460634d9b73c08e1a7a11ee
+      - ElementName: RTPCDiceCount
+        ObjectType: 13
+        guid: 927564ede2b09e40bdec00174667270c
+      Path: Game Parameters\Default Work Unit\RTPCDiceCount
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2ae92c811f0ecc479397324c01ed7f5e
+    ParentPath: States\Default Work Unit
+    guid: 2ae92c811f0ecc479397324c01ed7f5e
+    GuidInternal: 
+    m_lastTime: -8585436837169412965
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+    ParentPath: Switches\Default Work Unit
+    guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+    GuidInternal: 
+    m_lastTime: -8585436673932025640
+    List:
+    - name: Shoot
+      guid: 40a01bea98016c42aa2806b89684e95b
+      id: 3038207054
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+      - ElementName: Shoot
+        ObjectType: 11
+        guid: 40a01bea98016c42aa2806b89684e95b
+      Path: Switches\Default Work Unit\Shoot
+      values:
+      - name: Bomb
+        guid: d0b3525169efa64da59a1fdfec99bf30
+        id: 1727945837
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+        - ElementName: Shoot
+          ObjectType: 11
+          guid: 40a01bea98016c42aa2806b89684e95b
+        - ElementName: Bomb
+          ObjectType: 10
+          guid: d0b3525169efa64da59a1fdfec99bf30
+      - name: Homing
+        guid: c07b111a9963d2468d5211041f90d87d
+        id: 2623859709
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+        - ElementName: Shoot
+          ObjectType: 11
+          guid: 40a01bea98016c42aa2806b89684e95b
+        - ElementName: Homing
+          ObjectType: 10
+          guid: c07b111a9963d2468d5211041f90d87d
+      - name: Ice
+        guid: 4af334cf3ccf27498ba020103e6e7624
+        id: 344481046
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+        - ElementName: Shoot
+          ObjectType: 11
+          guid: 40a01bea98016c42aa2806b89684e95b
+        - ElementName: Ice
+          ObjectType: 10
+          guid: 4af334cf3ccf27498ba020103e6e7624
+      - name: Pierce
+        guid: 64333dc30c328a429f495209b364c74b
+        id: 1503331101
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+        - ElementName: Shoot
+          ObjectType: 11
+          guid: 40a01bea98016c42aa2806b89684e95b
+        - ElementName: Pierce
+          ObjectType: 10
+          guid: 64333dc30c328a429f495209b364c74b
+      - name: Ranaa
+        guid: 8c9a81baf2d9934580c2e4b95d2875f6
+        id: 1945229918
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+        - ElementName: Shoot
+          ObjectType: 11
+          guid: 40a01bea98016c42aa2806b89684e95b
+        - ElementName: Ranaa
+          ObjectType: 10
+          guid: 8c9a81baf2d9934580c2e4b95d2875f6
+      - name: Std
+        guid: 95f2c2fc5afadc459c4b93afb84ba42e
+        id: 628126516
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 9cec90954ac1c6418c81f16dfd6fcbcb
+        - ElementName: Shoot
+          ObjectType: 11
+          guid: 40a01bea98016c42aa2806b89684e95b
+        - ElementName: Std
+          ObjectType: 10
+          guid: 95f2c2fc5afadc459c4b93afb84ba42e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: c2428b8ed981724ea769395b32c597d9
+    ParentPath: Triggers\Default Work Unit
+    guid: c2428b8ed981724ea769395b32c597d9
+    GuidInternal: 
+    m_lastTime: -8585436837169164003
+    List: []
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 0
+  CurrentPluginConfig: 

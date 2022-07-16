@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AF2E1004-92A3-45D7-B919-9686C9A2A782}" SchemaVersion="103">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{AF2E1004-92A3-45D7-B919-9686C9A2A782}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="DiceRolls" ID="{B7F927C3-B76E-4DE3-B58E-94927D8E3D44}" ShortID="471643128">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Dice3" ID="{9BE8D524-CA1F-434B-B6DC-F193DBD0D630}" ShortID="369547036">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{557B874A-385A-4115-A8A3-2F6D41C01B96}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice3" ID="{DC449F69-19B7-4297-B9CE-2372BCC7C6C7}">
+									<Language>SFX</Language>
+									<AudioFile>Dice3.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="425607320"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice3" ID="{DC449F69-19B7-4297-B9CE-2372BCC7C6C7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice5" ID="{5FC57EE9-A1A4-4EAA-989A-BE74D464D4E4}" ShortID="693150012">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8AF3BE96-D703-4012-9628-2BC2326CC8AF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice5" ID="{856BBED5-AF9E-46F0-9682-A7614D51112D}">
+									<Language>SFX</Language>
+									<AudioFile>Dice5.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="374619839"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice5" ID="{856BBED5-AF9E-46F0-9682-A7614D51112D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice7" ID="{805B343F-CADC-4BF3-81E4-0788F5A8D4F8}" ShortID="325992758">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{610AE972-E4FB-4AB8-B5DB-70759FF3DADA}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice7" ID="{B623EEFB-4671-4014-9FF5-4D08159B2E6F}">
+									<Language>SFX</Language>
+									<AudioFile>Dice7.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="34117732"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice7" ID="{B623EEFB-4671-4014-9FF5-4D08159B2E6F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice4" ID="{04255E25-889C-451A-82E1-531632C7E6C9}" ShortID="240269467">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F464DA44-6461-439E-B64A-023CB13B7340}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice4" ID="{6229A9AB-4F58-42EF-9A10-49A8470CD8FF}">
+									<Language>SFX</Language>
+									<AudioFile>Dice4.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="210850505"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice4" ID="{6229A9AB-4F58-42EF-9A10-49A8470CD8FF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice1" ID="{D1A3C44D-7863-482A-AB3D-506A05E12059}" ShortID="189950576">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5035B68A-297A-4F1D-A332-278E331EEB09}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice1" ID="{A17703C8-7F82-4C0A-A5F5-DAC3BB045B17}">
+									<Language>SFX</Language>
+									<AudioFile>Dice1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="894955020"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice1" ID="{A17703C8-7F82-4C0A-A5F5-DAC3BB045B17}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice8" ID="{73C304C1-7C68-43FA-B20C-B19C40B414F8}" ShortID="823071488">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{774EC2B9-6E1F-4C89-B9F7-4AFA4CACCCD2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice8" ID="{C8231C74-9880-4C09-B3DF-A3A928FF8D9C}">
+									<Language>SFX</Language>
+									<AudioFile>Dice8.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="616408888"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice8" ID="{C8231C74-9880-4C09-B3DF-A3A928FF8D9C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice0" ID="{BEBA20F3-910D-4278-99B6-D48179233032}" ShortID="473158449">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{02D96511-50A0-45A1-AB81-9A50E3956905}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice0" ID="{9C6AD855-7986-4C29-B6E8-28100BF5C128}">
+									<Language>SFX</Language>
+									<AudioFile>Dice0.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="537427572"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice0" ID="{9C6AD855-7986-4C29-B6E8-28100BF5C128}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice" ID="{4B6E857E-87EC-475E-B2B0-B7DDF12E4AC7}" ShortID="176181682">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CFED1F67-3B23-4E28-8580-2C48A67F360F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice" ID="{F4485D8A-A807-45DB-93FA-774BB58377D3}">
+									<Language>SFX</Language>
+									<AudioFile>Dice.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="240578572"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice" ID="{F4485D8A-A807-45DB-93FA-774BB58377D3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice2" ID="{05073155-6D2A-4CE0-ADD7-03ABD3C9DACC}" ShortID="705248068">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B01358B2-05E2-4C37-ACB1-18BF5559A278}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice2" ID="{94EEC69D-D538-4F8E-9EBF-78E2AE309295}">
+									<Language>SFX</Language>
+									<AudioFile>Dice2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="93604302"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice2" ID="{94EEC69D-D538-4F8E-9EBF-78E2AE309295}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice6" ID="{E3089C95-0879-4C67-B937-660B6A6C4342}" ShortID="944231466">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C2BDBFA5-54E4-48E1-B25C-F329AD2D247B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice6" ID="{F00A7D0B-FAEF-4310-9E88-C7BD4956E29E}">
+									<Language>SFX</Language>
+									<AudioFile>Dice6.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="474586527"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice6" ID="{F00A7D0B-FAEF-4310-9E88-C7BD4956E29E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Dice9" ID="{31AE453F-8D83-4926-BFE5-6B0BECF7A950}" ShortID="257731097">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F23D6C27-05E8-47D5-BC7B-D035847CF289}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="0.5"/>
+													<Property Name="Min" Type="Real64" Value="-0.25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" WorkUnitID="{148ED506-6437-4DDF-B277-0DD1927E02FB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Dice9" ID="{520558E2-1CAF-4EF4-9C01-6E7DFAB59711}">
+									<Language>SFX</Language>
+									<AudioFile>Dice9.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="430986724"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Dice9" ID="{520558E2-1CAF-4EF4-9C01-6E7DFAB59711}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="UserInterfsce" ID="{8D6A9A9D-A260-4A88-A9EB-48044CE3AE85}" ShortID="560480386">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Pickup" ID="{83CF15DC-8216-4363-966B-E94AF95F51A0}" ShortID="119698036">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Drop" ID="{3F4347F4-CD2C-465E-9F1F-ABF0B41B6BD1}" ShortID="259552261">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Select" ID="{09CAF441-B3E4-4535-BCE4-FD50A7401493}" ShortID="759881355">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Tower" ID="{35CF743A-B8E2-4E12-BE50-A4F732C68815}" ShortID="725976331">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Destroy" ID="{F983C8AF-444A-4A76-AC6C-7A36C05FA21C}" ShortID="524930619">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<RandomSequenceContainer Name="Build" ID="{BDB605C0-7B92-46E5-8A77-6288FEE0B49D}" ShortID="669826523">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="BuildFirst" ID="{1491CBC4-408F-42E4-90A4-483FDA33A001}" ShortID="915576586">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="BuildSecond" ID="{6E68C8B2-6F5F-4E42-953B-F538C5D6A3A8}" ShortID="226104677">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="BuildThird" ID="{E2097E4C-93A8-402B-90AE-E3517EDE8866}" ShortID="93701765">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<SwitchContainer Name="Shoot" ID="{EAF29494-14CE-472B-A799-DBBF7EE3F8A8}" ShortID="756950834">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Std" ID="{C7763281-3552-4861-B8BD-712467ECF900}" ShortID="708869886">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="Ice" ID="{24344B85-6C6A-477E-A5FC-8569876B7A00}" ShortID="510949381">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="Pierce" ID="{CCDBD931-4B02-46EB-8854-EF1F3CF355E0}" ShortID="550804764">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="Bomb" ID="{A4753370-329C-4160-A28B-80E2D9585163}" ShortID="74508784">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="Ranga" ID="{5A91E109-0194-478E-B86C-EBC26F962AE6}" ShortID="673910220">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+								<Sound Name="Homing" ID="{2CEC9D1E-25C4-487B-932F-6514A1314CEE}" ShortID="1023122715">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists/>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Ranga" ID="{5A91E109-0194-478E-B86C-EBC26F962AE6}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Homing" ID="{2CEC9D1E-25C4-487B-932F-6514A1314CEE}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Pierce" ID="{CCDBD931-4B02-46EB-8854-EF1F3CF355E0}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Bomb" ID="{A4753370-329C-4160-A28B-80E2D9585163}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Std" ID="{C7763281-3552-4861-B8BD-712467ECF900}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Ice" ID="{24344B85-6C6A-477E-A5FC-8569876B7A00}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="DavidDiceman" ID="{FB907517-3340-431F-81CB-57C65330B65E}" ShortID="231832990">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+				<ActorMixer Name="Enemy" ID="{643D6255-7669-4FCA-90BF-A81D5D35B6E8}" ShortID="727742008">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Step" ID="{6DBA138C-6D08-43F5-A708-14F606D1BD42}" ShortID="233408742">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+						<Sound Name="Die" ID="{8D7E63BC-1F79-457D-9D8C-A6AEF3E7010F}" ShortID="275308872">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DF72A582-2282-41F0-99ED-20B6680884EB}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{90A223B5-C838-42BA-9661-219EC26A50E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

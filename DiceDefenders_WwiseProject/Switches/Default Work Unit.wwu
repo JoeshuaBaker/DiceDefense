@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9590EC9C-C14A-41C6-8C81-F16DFD6FCBCB}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{9590EC9C-C14A-41C6-8C81-F16DFD6FCBCB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Shoot" ID="{EA1BA040-0198-426C-AA28-06B89684E95B}">
+					<ChildrenList>
+						<Switch Name="Std" ID="{FCC2F295-FA5A-45DC-9C4B-93AFB84BA42E}"/>
+						<Switch Name="Ice" ID="{CF34F34A-CF3C-4927-8BA0-20103E6E7624}"/>
+						<Switch Name="Pierce" ID="{C33D3364-320C-428A-9F49-5209B364C74B}"/>
+						<Switch Name="Bomb" ID="{5152B3D0-EF69-4DA6-A59A-1FDFEC99BF30}"/>
+						<Switch Name="Homing" ID="{1A117BC0-6399-46D2-8D52-11041F90D87D}"/>
+						<Switch Name="Ranaa" ID="{BA819A8C-D9F2-4593-80C2-E4B95D2875F6}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

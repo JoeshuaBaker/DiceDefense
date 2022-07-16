@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{148ED506-6437-4DDF-B277-0DD1927E02FB}" SchemaVersion="103">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{148ED506-6437-4DDF-B277-0DD1927E02FB}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Dice_EQ" ID="{47789315-A794-4CAD-9FBE-F549BA1A0396}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="300"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="2000"/>
+						<Property Name="GainBand2" Type="Real32" Value="12"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>
