@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33897457938783466}
   - component: {fileID: 23986310822093114}
   - component: {fileID: 3837883707324887071}
+  - component: {fileID: 900729314988645328}
   m_Layer: 0
   m_Name: king black
   m_TagString: Untagged
@@ -95,7 +96,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    enemyType: 0
+    type: 0
     hp: 0
     speed: 0
-    path: {fileID: 0}
+    count: 1
+    time: 1
+  finished: 0
+  slowPercent: 0
+  pathLength: 0
+  timeToComplete: 0
+--- !u!64 &900729314988645328
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822731811085762}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: a2d0536ee11e54065bce3df96d6d44c2, type: 3}

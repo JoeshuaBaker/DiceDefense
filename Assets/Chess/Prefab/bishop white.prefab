@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33579944788633322}
   - component: {fileID: 23816763467880910}
   - component: {fileID: 1409197896269617149}
+  - component: {fileID: 571068113169437369}
   m_Layer: 0
   m_Name: bishop white
   m_TagString: Untagged
@@ -95,7 +96,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data:
-    enemyType: 0
+    type: 0
     hp: 0
     speed: 0
-    path: {fileID: 0}
+    count: 1
+    time: 1
+  finished: 0
+  slowPercent: 0
+  pathLength: 0
+  timeToComplete: 0
+--- !u!64 &571068113169437369
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223592777669084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: fb83f00e031a94dd9abf2e72a18251c0, type: 3}
