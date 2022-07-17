@@ -6,6 +6,7 @@ public class AnyDice : MonoBehaviour
 {
     public GameObject[] dice;
     public DiceSprite diceSprite;
+    private bool isPickedUp = false;
 
     public void ShowFace(int i)
     {
@@ -28,7 +29,11 @@ public class AnyDice : MonoBehaviour
 
     public void OnMouseDrag()
     {
-        AkSoundEngine.PostEvent("Play_Pickup", gameObject);
+        if (!isPickedUp)
+        {
+            AkSoundEngine.PostEvent("Play_Pickup", gameObject);
+            isPickedUp = true;
+        }
 
         diceSprite.OnDrag();
     }
@@ -38,6 +43,7 @@ public class AnyDice : MonoBehaviour
         AkSoundEngine.PostEvent("Play_Drop", gameObject);
 
         diceSprite.OnEndDrag();
+        isPickedUp = false;
     }
 
     public void OnDisable()

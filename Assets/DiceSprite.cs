@@ -56,7 +56,7 @@ public class DiceSprite : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             {
                 if ((int)(rollRemaining * 1000f) % rollMod == 0)
                 {
-                    ShowFace(Random.Range(1, 6));
+                    ShowFace(Random.Range(1, 7));
                     rollMod++;
                 }
             }
@@ -64,7 +64,7 @@ public class DiceSprite : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
             {
                 rolling = false;
                 rollRemaining = rollTime;
-                face = Random.Range(1, 6);
+                face = Random.Range(1, 7);
                 ShowFace(face);
                 button.color = Color.white;
                 anyDice.ShowFace(face);

@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patternType: 3
-  damageMultiplier: 1
+  damageMultiplier: 2
   rangeMultiplier: 1
   fireRateMultiplier: 1
