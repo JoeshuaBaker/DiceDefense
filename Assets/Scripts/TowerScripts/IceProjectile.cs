@@ -55,8 +55,8 @@ public class IceProjectile : Projectile
             return;
         }
 
-        this.transform.position = this.transform.position + this.transform.forward * flySpeed * Time.deltaTime;
-        if(pingpong)
+        this.transform.position = this.transform.position + (initialDirection) * flySpeed * Time.deltaTime;
+        if (pingpong)
         {
             spikeValue += Time.deltaTime * 100f;
         }

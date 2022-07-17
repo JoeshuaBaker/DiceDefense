@@ -22,6 +22,8 @@ public class Tower : MonoBehaviour
 
     public float timer;
     public float failCheckTimeout = 0.25f;
+    public bool waitToFire = false;
+    public bool fireSignal = false;
 
     public float finalRange = 1f;
     public float finalFireRate = 1f;
@@ -37,6 +39,8 @@ public class Tower : MonoBehaviour
         currentArea.Init(areaType);
         currentPattern = patterns[(int)patternType];
         currentPattern.bulletParent = projectileParent;
+        waitToFire = currentProjectile.projectileType == Projectile.ProjectileType.Boomerang;
+        fireSignal = waitToFire;
     }
 
     // Update is called once per frame
@@ -56,6 +60,15 @@ public class Tower : MonoBehaviour
 
         finalDamage = currentProjectile.damage;
         finalDamage *= currentPattern.damageMultiplier;
+
+        if(waitToFire)
+        {
+            if(!fireSignal)
+            {
+                timer = 0;
+                return;
+            }
+        }
 
         if(timer > finalFireRate)
         {
@@ -85,23 +98,23 @@ public class Tower : MonoBehaviour
                     maxProgress = enemy.progress;
                 }
             }
-            
-            if(allFoundEnemies.Count == 0)
-            {
-
-            }
 
             lastFoundEnemies = allFoundEnemies.ToArray();
             ProjectileData shootData = new ProjectileData
             {
                 target = closestEnemy,
                 damage = finalDamage,
-                range = finalRange
+                range = finalRange,
+                tower = this
             };
 
             if (currentPattern.Shoot(currentProjectile, shootData))
             {
                 timer = 0;
+                if(waitToFire)
+                {
+                    fireSignal = false;
+                }
             }
             else
             {
@@ -115,6 +128,8 @@ public class Tower : MonoBehaviour
         if(projectileType != currentProjectile.projectileType)
         {
             currentProjectile = projectiles[(int)projectileType];
+            waitToFire = currentProjectile.projectileType == Projectile.ProjectileType.Boomerang;
+            fireSignal = waitToFire;
         }
         
         if(areaType != currentArea.areaType)

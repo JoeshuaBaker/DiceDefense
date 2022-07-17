@@ -111,12 +111,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ecb44c43e2212945b54ca74ff2d3443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileType: 0
+  projectileType: 3
   damage: 2
   range: 8
-  fireRate: 10
-  flySpeed: 2
+  fireRate: 1
+  flySpeed: 25
   numEnemiesPierce: 255
+  degreesPerSecond: 1080
+  travelCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.9326024
+      value: 0.7768668
+      inSlope: -1.6619886
+      outSlope: -1.6619886
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.1369221
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.0270386
+      value: 0.020814374
+      inSlope: 3.3034687
+      outSlope: 3.3034687
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.7444161
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &3127018111151103560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142,15 +176,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4341030572099469583, guid: 787247560bf53dd44ad27547ec50ab22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.889
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341030572099469583, guid: 787247560bf53dd44ad27547ec50ab22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.242
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341030572099469583, guid: 787247560bf53dd44ad27547ec50ab22, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341030572099469583, guid: 787247560bf53dd44ad27547ec50ab22, type: 3}
       propertyPath: m_LocalRotation.w

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public EnemyData data;
+    Animator animator;
 
     public bool finished = false;
     public float slowPercent = 0.0f;
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
         pathLength = data.path.length;
         timeToComplete = pathLength / data.speed;
         timer = 0;
+        this.animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,11 +37,13 @@ public class Enemy : MonoBehaviour
             if(slowDuration > 0f)
             {
                 slowDuration -= Time.deltaTime;
+                animator.speed = 1.0f - slowPercent;
             }
             else if(slowDuration < 0f)
             {
                 slowDuration = 0f;
                 slowPercent = 0f;
+                animator.speed = 1.0f;
             }
 
             progress = timer / timeToComplete;

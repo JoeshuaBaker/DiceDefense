@@ -24,11 +24,22 @@ public abstract class Projectile : MonoBehaviour
     public ProjectileData data;
     private float distanceTraveled;
     private float timer;
+    protected Vector3 initialDirection;
 
-    public void Init(ProjectileData data)
+    public virtual void Init(ProjectileData data)
     {
         this.data = data;
         transform.LookAt(data.target.transform);
+        if(projectileType != ProjectileType.Boomerang)
+        {
+            transform.Rotate(new Vector3(90, 0, 0));
+        }
+        else
+        {
+            transform.Rotate(new Vector3(0, 0, 90));
+        }
+        initialDirection = data.target.transform.position - this.transform.position;
+        initialDirection = initialDirection.normalized;
     }
 
     private void OnTriggerEnter(Collider collider)

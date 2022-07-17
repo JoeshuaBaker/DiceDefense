@@ -14,7 +14,7 @@ public class BulletProjectile : Projectile
     // Update is called once per frame
     protected override void Update()
     {
-        this.transform.position = this.transform.position + this.transform.forward * flySpeed * Time.deltaTime;
+        this.transform.position = this.transform.position + (initialDirection) * flySpeed * Time.deltaTime;
         base.Update();
     }
 }
