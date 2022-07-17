@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1677930596" Language="SFX" Hash="2909295775">
+		<SoundBank Id="1677930596" Language="SFX" Hash="2918789546">
 			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
 			<ShortName>DiceDefenders</ShortName>
 			<Path>DiceDefenders.bnk</Path>
@@ -105,19 +105,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2873631388" Name="RangShoot" ObjectPath="\Events\Default Work Unit\Projectiles\RangShoot" DurationType="OneShot" DurationMin="0.584147" DurationMax="0.827919">
+				<Event Id="415148874" Name="RangHit" ObjectPath="\Events\Default Work Unit\Projectiles\Boomerang\RangHit" DurationType="OneShot" DurationMin="0.193855" DurationMax="0.193855">
+					<IncludedMemoryFiles>
+						<File Id="950880742" Language="SFX">
+							<ShortName>hit.wav</ShortName>
+							<Path>SFX\hit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2873631388" Name="RangShoot" ObjectPath="\Events\Default Work Unit\Projectiles\Boomerang\RangShoot" DurationType="OneShot" DurationMin="0.584147" DurationMax="0.827919">
 					<IncludedMemoryFiles>
 						<File Id="74964241" Language="SFX">
 							<ShortName>Fly2.wav</ShortName>
-							<Path>SFX\Fly2_959B5E98.wem</Path>
+							<Path>SFX\Fly2_E4BBD438.wem</Path>
 						</File>
 						<File Id="375455987" Language="SFX">
 							<ShortName>Fly3.wav</ShortName>
-							<Path>SFX\Fly3_561F5C1E.wem</Path>
+							<Path>SFX\Fly3_3729BB2C.wem</Path>
 						</File>
 						<File Id="708485099" Language="SFX">
 							<ShortName>Fly.wav</ShortName>
-							<Path>SFX\Fly_10C4C929.wem</Path>
+							<Path>SFX\Fly_92E0D188.wem</Path>
 						</File>
 						<File Id="1056722438" Language="SFX">
 							<ShortName>Throw.wav</ShortName>
@@ -133,23 +141,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2748335401" Name="StdShoot" ObjectPath="\Events\Default Work Unit\Projectiles\StdShoot" DurationType="OneShot" DurationMin="0.368612" DurationMax="0.552294">
+				<Event Id="2580790811" Name="StdHit" ObjectPath="\Events\Default Work Unit\Projectiles\Std\StdHit" DurationType="OneShot" DurationMin="0.157506" DurationMax="0.157506">
 					<IncludedMemoryFiles>
-						<File Id="805077479" Language="SFX">
-							<ShortName>woosh2.wav</ShortName>
-							<Path>SFX\woosh2_10C4C929.wem</Path>
+						<File Id="513884019" Language="SFX">
+							<ShortName>gunhit.wav</ShortName>
+							<Path>SFX\gunhit_10C4C929.wem</Path>
 						</File>
-						<File Id="880983648" Language="SFX">
-							<ShortName>woosh3.wav</ShortName>
-							<Path>SFX\woosh3_10C4C929.wem</Path>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2748335401" Name="StdShoot" ObjectPath="\Events\Default Work Unit\Projectiles\Std\StdShoot" DurationType="OneShot" DurationMin="0.567913" DurationMax="0.895555">
+					<IncludedMemoryFiles>
+						<File Id="80771577" Language="SFX">
+							<ShortName>gun.wav</ShortName>
+							<Path>SFX\gun_129CD6BE.wem</Path>
 						</File>
-						<File Id="895087983" Language="SFX">
-							<ShortName>base.wav</ShortName>
-							<Path>SFX\base_10C4C929.wem</Path>
+						<File Id="84667249" Language="SFX">
+							<ShortName>gun.wav</ShortName>
+							<Path>SFX\gun_5AA09454.wem</Path>
 						</File>
-						<File Id="949866216" Language="SFX">
-							<ShortName>woosh.wav</ShortName>
-							<Path>SFX\woosh_10C4C929.wem</Path>
+						<File Id="489322990" Language="SFX">
+							<ShortName>gun.wav</ShortName>
+							<Path>SFX\gun_953D814B.wem</Path>
+						</File>
+						<File Id="757506751" Language="SFX">
+							<ShortName>gun.wav</ShortName>
+							<Path>SFX\gun_6E628798.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

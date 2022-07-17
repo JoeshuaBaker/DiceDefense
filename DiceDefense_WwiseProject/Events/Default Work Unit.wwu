@@ -57,28 +57,58 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
-						<Event Name="StdShoot" ID="{D3C9DEF0-7DC9-41BE-9910-1CB26510076F}">
+						<Folder Name="Boomerang" ID="{3E267808-B201-4BF0-ACE6-7F0F28702AC0}" ShortID="664859858">
 							<ChildrenList>
-								<Action Name="" ID="{BD451BE3-2BD0-4509-9C90-0B1F104E201D}" ShortID="867039166">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Std" ID="{2C602C32-73FB-42F1-81CF-1BFCFE373F3D}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="RangShoot" ID="{574602A8-9E65-4685-96A2-1EE34C531DAE}">
+									<ChildrenList>
+										<Action Name="" ID="{86A7A5C2-27BD-4900-94BD-5EBE4183DF43}" ShortID="790994042">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boomerang" ID="{2610FAAC-0EDD-461B-BF21-C6D594971086}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="RangHit" ID="{027D479A-8168-4505-9953-6C5B842BE388}">
+									<ChildrenList>
+										<Action Name="" ID="{81E4CF7F-3C5D-4AB4-AB44-8893BDB444FD}" ShortID="226509526">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RangHit" ID="{62505121-170F-4171-B035-FD3797078318}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="RangShoot" ID="{574602A8-9E65-4685-96A2-1EE34C531DAE}">
+						</Folder>
+						<Folder Name="Std" ID="{3B7034A8-EBCA-40E9-8869-BA7CFB24A603}" ShortID="783317865">
 							<ChildrenList>
-								<Action Name="" ID="{86A7A5C2-27BD-4900-94BD-5EBE4183DF43}" ShortID="790994042">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Boomerang" ID="{2610FAAC-0EDD-461B-BF21-C6D594971086}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="StdShoot" ID="{D3C9DEF0-7DC9-41BE-9910-1CB26510076F}">
+									<ChildrenList>
+										<Action Name="" ID="{BD451BE3-2BD0-4509-9C90-0B1F104E201D}" ShortID="867039166">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Std" ID="{2C602C32-73FB-42F1-81CF-1BFCFE373F3D}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StdHit" ID="{E8B86897-8FD2-4EC4-B6EC-0DA457821D7A}">
+									<ChildrenList>
+										<Action Name="" ID="{420373A2-6E6F-42D8-86AA-0FA26B5EEDB7}" ShortID="710983416">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="StdHit" ID="{938EFCFB-BFF1-4F70-9B89-CEC4A29170FE}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Event Name="StartMusic" ID="{3764B25D-9AF6-4B97-89B4-75ADFCE5273F}">

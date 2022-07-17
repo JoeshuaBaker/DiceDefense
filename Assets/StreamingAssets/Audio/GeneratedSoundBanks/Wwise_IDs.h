@@ -17,8 +17,10 @@ namespace AK
         static const AkUniqueID ICESHOOT = 1091888827U;
         static const AkUniqueID MISSILEHIT = 2305532690U;
         static const AkUniqueID MISSILESHOOT = 3974466484U;
+        static const AkUniqueID RANGHIT = 415148874U;
         static const AkUniqueID RANGSHOOT = 2873631388U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
+        static const AkUniqueID STDHIT = 2580790811U;
         static const AkUniqueID STDSHOOT = 2748335401U;
         static const AkUniqueID STOPMUSIC = 1917263390U;
     } // namespace EVENTS
