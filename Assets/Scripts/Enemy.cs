@@ -8,11 +8,13 @@ public class Enemy : MonoBehaviour
 
     public bool finished = false;
     public float slowPercent = 0.0f;
+    public float slowDuration = 0.0f;
 
     private float timer = 0f;
     private bool initialized = false;
     public float pathLength = 0f;
     public float timeToComplete = 0f;
+    public float progress;
 
     public void Init(EnemyData data)
     {
@@ -29,8 +31,19 @@ public class Enemy : MonoBehaviour
         if(initialized && !finished)
         {
             timer += Time.deltaTime*(1.0f - slowPercent);
-            float progress = timer / timeToComplete;
-            if (progress > 1)
+
+            if(slowDuration > 0f)
+            {
+                slowDuration -= Time.deltaTime;
+            }
+            else if(slowDuration < 0f)
+            {
+                slowDuration = 0f;
+                slowPercent = 0f;
+            }
+
+            progress = timer / timeToComplete;
+            if (progress >= 1)
             {
                 finished = true;
                 return;
@@ -41,8 +54,12 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider collision)
+    public void GetHit(float damage)
     {
-        Debug.LogError("HIT");
+        data.hp -= damage;
+        if(data.hp <= 0)
+        {
+            Destroy(transform.parent.gameObject);
+        }
     }
 }

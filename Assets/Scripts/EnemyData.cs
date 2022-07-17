@@ -3,7 +3,7 @@ using System.Collections;
 public class EnemyData
 {
     public EnemyTypes type;
-    public int hp = 10;
+    public float hp = 10;
     public float speed = 1;
     public int count = 1;
     public float time = 1;

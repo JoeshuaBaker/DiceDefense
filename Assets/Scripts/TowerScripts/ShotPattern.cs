@@ -18,6 +18,7 @@ public abstract class ShotPattern : MonoBehaviour
     public float damageMultiplier = 1.0f;
     public float rangeMultiplier = 1.0f;
     public float fireRateMultiplier = 1.0f;
+    public Transform bulletParent = null;
 
-    public abstract bool Shoot(Projectile projectile);
+    public abstract bool Shoot(Projectile projectile, ProjectileData projectileData);
 }

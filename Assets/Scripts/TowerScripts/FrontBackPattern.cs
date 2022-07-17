@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FrontBackPattern : ShotPattern
 {
-    public override bool Shoot(Projectile projectile)
+    public override bool Shoot(Projectile projectile, ProjectileData projectileData)
     {
         throw new System.NotImplementedException();
     }
