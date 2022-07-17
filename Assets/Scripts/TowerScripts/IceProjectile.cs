@@ -7,7 +7,7 @@ public class IceProjectile : Projectile
     //explode in a small radius, applying slows to all enemies hit with new collider
     public override void OnEnemyCollide(Enemy enemy)
     {
-        throw new System.NotImplementedException();
+        
     }
 
     // Start is called before the first frame update

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8600730017694592149}
   - component: {fileID: 8224509264087921651}
   - component: {fileID: 1864045285998043621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,8 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2197a7a1ab2aa1e499300c1a86d74e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 4
+  projectileType: 0
   damage: 3
   range: 6
   fireRate: 1
+  flySpeed: 25
   numEnemiesPierce: 255

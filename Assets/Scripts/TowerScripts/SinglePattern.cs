@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class SinglePattern : ShotPattern
 {
-    public override bool Shoot(Projectile projectile)
+    public override bool Shoot(Projectile projectile, ProjectileData projectileData)
     {
-        throw new System.NotImplementedException();
+        Projectile projInstance = Instantiate(projectile, bulletParent);
+        projInstance.Init(projectileData);
+        return true;
     }
 
     // Start is called before the first frame update

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8473420190718147712}
   - component: {fileID: 4562463919567812056}
   - component: {fileID: 7947394036190090243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ice
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,10 +121,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c4ff8d01ea27704683cda4e9bc09cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
+  projectileType: 0
   damage: 1
   range: 5
   fireRate: 1
+  flySpeed: 3
   numEnemiesPierce: 0
 --- !u!1001 &9175190286308711814
 PrefabInstance:

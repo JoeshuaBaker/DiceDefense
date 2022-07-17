@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 6187766412919827630}
   - component: {fileID: 5940196780896115158}
   - component: {fileID: 8431404866178466075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,10 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6690b0abc7738a740bfd4734c3fdcae1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  projectileType: 0
   damage: 10
   range: 5
   fireRate: 1
+  flySpeed: 10
   numEnemiesPierce: 0
 --- !u!54 &8431404866178466075
 Rigidbody:

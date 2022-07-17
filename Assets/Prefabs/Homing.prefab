@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3005373652006565545}
   - component: {fileID: 2367061017398271186}
   - component: {fileID: 4473331852175264538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Homing
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,10 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131f6188812e3c54985b7d92c846f815, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 5
-  damage: 15
-  range: 1
+  projectileType: 0
+  damage: 8
+  range: 4
   fireRate: 1
+  flySpeed: 8
   numEnemiesPierce: 255
 --- !u!54 &4473331852175264538
 Rigidbody:

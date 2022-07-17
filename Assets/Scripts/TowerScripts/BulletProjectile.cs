@@ -7,18 +7,14 @@ public class BulletProjectile : Projectile
     //destroy this projectile
     public override void OnEnemyCollide(Enemy enemy)
     {
-        throw new System.NotImplementedException();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        enemy.GetHit(data.damage);
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
-    void Update()
+    protected override void Update()
     {
-        
+        this.transform.position = this.transform.position + this.transform.forward * flySpeed * Time.deltaTime;
+        base.Update();
     }
 }

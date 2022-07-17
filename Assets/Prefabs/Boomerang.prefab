@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4927506639111046019}
   - component: {fileID: 8793598798043832033}
   - component: {fileID: 8803241411701516913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boomerang
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,10 +111,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ecb44c43e2212945b54ca74ff2d3443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 3
+  projectileType: 0
   damage: 2
   range: 8
   fireRate: 10
+  flySpeed: 2
   numEnemiesPierce: 255
 --- !u!1001 &3127018111151103560
 PrefabInstance:
