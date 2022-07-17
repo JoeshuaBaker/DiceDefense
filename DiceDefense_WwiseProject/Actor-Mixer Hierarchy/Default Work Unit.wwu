@@ -13,7 +13,27 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Move" ID="{EB1CF0D2-E070-420A-819D-93470A37588E}" ShortID="625502636">
+						<Sound Name="Hit" ID="{EB1CF0D2-E070-420A-819D-93470A37588E}" ShortID="625502636">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{EF31D500-27B6-4934-A832-25CFBC452605}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="400"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
@@ -22,9 +42,41 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="enemyhit" ID="{2F22B638-DC6D-48F5-AAEE-991D0B7CCAAD}">
+									<Language>SFX</Language>
+									<AudioFile>enemyhit.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="205922323"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
 							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="enemyhit" ID="{2F22B638-DC6D-48F5-AAEE-991D0B7CCAAD}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Die" ID="{F99D3DCF-1D7B-446D-ACAD-9245FADF25E8}" ShortID="871281255">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CA9FFF59-876B-4351-A176-05B78FBE2688}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="400"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
@@ -33,7 +85,19 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="enemydie" ID="{16348688-A324-4010-B05F-E794768376A2}">
+									<Language>SFX</Language>
+									<AudioFile>enemydie.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="693422366"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
 							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="enemydie" ID="{16348688-A324-4010-B05F-E794768376A2}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
@@ -73,49 +137,15 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Pierce" ID="{A65DB808-B1C2-4424-84DF-5DE25E4EECDA}" ShortID="79730398">
-									<PropertyList>
-										<Property Name="OverrideEffect" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{8DB481E9-16B6-4FFD-9B19-AEEE91C65917}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-700"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-										</Reference>
-										<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
-											<ObjectRef Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Laser" ID="{A97ADBAE-940A-4542-9793-DCC77B7ED54A}">
-											<Language>SFX</Language>
-											<AudioFile>Laser.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="314439610"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="Laser" ID="{A97ADBAE-940A-4542-9793-DCC77B7ED54A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<BlendContainer Name="Bomb" ID="{9D64788F-D3F2-4517-8E29-C241AB96F80E}" ShortID="681790897">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -123,9 +153,14 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-9</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -620,12 +655,29 @@
 								</BlendContainer>
 								<BlendContainer Name="Homing" ID="{E03A9EA9-562F-40E3-8FC0-B22A3176F300}" ShortID="747778139">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{2471BCCA-75D7-4BA6-A6C5-6638A5CF03C8}"/>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -753,6 +805,13 @@
 								</BlendContainer>
 								<BlendContainer Name="Ice" ID="{AEFDB752-09AA-47FD-9C44-4A41B103453C}" ShortID="730405867">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -760,6 +819,11 @@
 													<Modifier Name="" ID="{90C05A0D-84A9-429A-8B60-54D42B246515}"/>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1110,12 +1174,25 @@
 								</BlendContainer>
 								<BlendContainer Name="Boomerang" ID="{2610FAAC-0EDD-461B-BF21-C6D594971086}" ShortID="326864465">
 									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{1F5C460F-BB58-461C-B205-3F346E0A8C49}"/>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -1305,13 +1382,117 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</BlendContainer>
+								<BlendContainer Name="Piercing" ID="{305124E1-10F5-4715-9267-3E14CB758328}" ShortID="475061145">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Pierce" ID="{A65DB808-B1C2-4424-84DF-5DE25E4EECDA}" ShortID="79730398">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>36</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8DB481E9-16B6-4FFD-9B19-AEEE91C65917}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-700"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+													<ObjectRef Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Laser" ID="{A97ADBAE-940A-4542-9793-DCC77B7ED54A}">
+													<Language>SFX</Language>
+													<AudioFile>Laser.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="314439610"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Laser" ID="{A97ADBAE-940A-4542-9793-DCC77B7ED54A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Scifi, Energy, Force Field, Hum, Loop 01 SND7132" ID="{9E73F15D-E396-44D4-8688-417CA2B28D8E}" ShortID="552407473">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Scifi, Energy, Force Field, Hum, Loop 01 SND7132" ID="{422CD3E3-A578-4846-8312-5610CBAAAC7B}">
+													<Language>SFX</Language>
+													<AudioFile>Scifi, Energy, Force Field, Hum, Loop 01 SND7132.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="824700671"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Scifi, Energy, Force Field, Hum, Loop 01 SND7132" ID="{422CD3E3-A578-4846-8312-5610CBAAAC7B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
 							</ChildrenList>
 							<ObjectLists/>
 							<GroupingInfo>
 								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="Pierce" ID="{A65DB808-B1C2-4424-84DF-5DE25E4EECDA}"/>
-									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Std" ID="{2C602C32-73FB-42F1-81CF-1BFCFE373F3D}"/>
 									</GroupingBehavior>
@@ -1327,18 +1508,15 @@
 									<GroupingBehavior>
 										<ItemRef Name="Boomerang" ID="{2610FAAC-0EDD-461B-BF21-C6D594971086}"/>
 									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Piercing" ID="{305124E1-10F5-4715-9267-3E14CB758328}"/>
+									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
 										<SwitchRef Name="Ice" ID="{51AB1C5F-23BD-4DE4-B9C0-EB7B199CAD3B}"/>
 										<ItemList>
 											<ItemRef Name="Ice" ID="{AEFDB752-09AA-47FD-9C44-4A41B103453C}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Pierce" ID="{FCFF6265-A5B0-492B-9B96-E159113872DD}"/>
-										<ItemList>
-											<ItemRef Name="Pierce" ID="{A65DB808-B1C2-4424-84DF-5DE25E4EECDA}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -1627,7 +1805,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1888,7 +2066,24 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Drop" ID="{E178F986-4602-4206-AC14-1C1B2EDB5DFA}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.322146654580199"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.322146654580199"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Drop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="299145500"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
 							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Drop" ID="{E178F986-4602-4206-AC14-1C1B2EDB5DFA}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Pickup" ID="{951612F1-E1D5-4ACE-B16C-61531CC1C2C1}" ShortID="411438133">
 							<ReferenceList>
@@ -1899,7 +2094,24 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Pickup" ID="{37DF4437-04A6-4F85-8CE3-406C9CAAE45A}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.179832449986797"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.179832449986797"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Pickup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="556627651"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
 							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Pickup" ID="{37DF4437-04A6-4F85-8CE3-406C9CAAE45A}" Platform="Linked"/>
+							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<ObjectLists/>
@@ -1915,6 +2127,20 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="RollDice" ID="{84C880FB-C8EB-44D6-9531-EB37F4AB8DF4}" ShortID="987954132">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>

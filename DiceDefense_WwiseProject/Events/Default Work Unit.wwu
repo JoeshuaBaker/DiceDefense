@@ -109,6 +109,46 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Pierce" ID="{80841DA9-3838-40C6-8702-A9E49C3C1FB8}" ShortID="827330679">
+							<ChildrenList>
+								<Event Name="PierceShoot" ID="{7F010A84-7B11-42F7-95B2-0C27DECAC433}">
+									<ChildrenList>
+										<Action Name="" ID="{0A5ACECA-50E9-479D-984D-C9172E402BF1}" ShortID="111030492">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Pierce" ID="{A65DB808-B1C2-4424-84DF-5DE25E4EECDA}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PierceStop" ID="{4D1A4465-4390-44B1-B8EA-C96BEC2EA9B8}">
+									<ChildrenList>
+										<Action Name="" ID="{2C2A9FE8-AD08-4781-BAFC-72E912C3F4C4}" ShortID="521155750">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Scifi, Energy, Force Field, Hum, Loop 01 SND7132" ID="{9E73F15D-E396-44D4-8688-417CA2B28D8E}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="HomeShot" ID="{D188ECB7-A706-4327-BDB2-6F01E09CE987}">
+							<ChildrenList>
+								<Action Name="" ID="{89C393FC-8CEF-47A2-96FC-E2CA115B9057}" ShortID="256406258">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Homing" ID="{E03A9EA9-562F-40E3-8FC0-B22A3176F300}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="StartMusic" ID="{3764B25D-9AF6-4B97-89B4-75ADFCE5273F}">
@@ -131,6 +171,65 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Kevin" ID="{5F0290A6-8C1C-413F-81B5-1BF34848A1A6}" WorkUnitID="{2D818205-43DB-43DA-B6EE-986F1F733176}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="RollDice" ID="{A188F044-0134-43BA-BD5B-D95E574B18BB}">
+					<ChildrenList>
+						<Action Name="" ID="{7A91C232-AB2C-48E8-88B3-D6E08E017A53}" ShortID="647249765">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RollDice" ID="{84C880FB-C8EB-44D6-9531-EB37F4AB8DF4}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Enemy" ID="{1BC4DA6B-DCAD-4C21-AD9A-56C93057132E}" ShortID="139769054">
+					<ChildrenList>
+						<Event Name="EnemyDie" ID="{BB36A72A-12B6-49E8-8EC8-FB6ED4E0E5E8}">
+							<ChildrenList>
+								<Action Name="" ID="{8949E489-B3F4-4DF7-BFA4-2906F674207F}" ShortID="257204513">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Die" ID="{F99D3DCF-1D7B-446D-ACAD-9245FADF25E8}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EnemyHit" ID="{098F485C-EEF2-4E82-8BD5-328B2C345C70}">
+							<ChildrenList>
+								<Action Name="" ID="{84263F50-D9DA-4FF4-9B08-B65AD4BC1B39}" ShortID="809214629">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hit" ID="{EB1CF0D2-E070-420A-819D-93470A37588E}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_Drop" ID="{DC15F82A-A79E-4787-B72D-B4E9D07786CC}">
+					<ChildrenList>
+						<Action Name="" ID="{FD69138D-1FF8-486C-ACFC-400DFE8AB30F}" ShortID="136203321">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Drop" ID="{1AB723AA-F28C-40EF-9AC9-B7273C4795AB}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pickup" ID="{11474AA7-2088-4DE7-8962-1B526C4D9581}">
+					<ChildrenList>
+						<Action Name="" ID="{01DFC1C8-136E-4CD0-B4BE-56098DAF634A}" ShortID="234567281">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pickup" ID="{951612F1-E1D5-4ACE-B16C-61531CC1C2C1}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

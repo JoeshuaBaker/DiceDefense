@@ -11,16 +11,44 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="680709378">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2650974043">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1677930596" Language="SFX" Hash="2290587722">
+		<SoundBank Id="1677930596" Language="SFX" Hash="3533930966">
 			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
 			<ShortName>DiceDefenders</ShortName>
 			<Path>DiceDefenders.bnk</Path>
 			<IncludedEvents>
+				<Event Id="794424115" Name="EnemyDie" ObjectPath="\Events\Default Work Unit\Enemy\EnemyDie" DurationType="OneShot" DurationMin="0.336558" DurationMax="0.504267">
+					<IncludedMemoryFiles>
+						<File Id="693422366" Language="SFX">
+							<ShortName>enemydie.wav</ShortName>
+							<Path>SFX\enemydie_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="391172934" Name="EnemyHit" ObjectPath="\Events\Default Work Unit\Enemy\EnemyHit" DurationType="OneShot" DurationMin="0.195527" DurationMax="0.29296">
+					<IncludedMemoryFiles>
+						<File Id="205922323" Language="SFX">
+							<ShortName>enemyhit.wav</ShortName>
+							<Path>SFX\enemyhit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="453982812" Name="HomeShot" ObjectPath="\Events\Default Work Unit\Projectiles\HomeShot" DurationType="OneShot" DurationMin="0.519297" DurationMax="0.519297">
+					<IncludedMemoryFiles>
+						<File Id="577125863" Language="SFX">
+							<ShortName>Beep.wav</ShortName>
+							<Path>SFX\Beep_10C4C929.wem</Path>
+						</File>
+						<File Id="827821555" Language="SFX">
+							<ShortName>Tail.wav</ShortName>
+							<Path>SFX\Tail_6DF29B91.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3694142913" Name="IceHit" ObjectPath="\Events\Default Work Unit\Projectiles\Ice\IceHit" DurationType="OneShot" DurationMin="0.877538" DurationMax="0.975212">
 					<IncludedMemoryFiles>
 						<File Id="88358828" Language="SFX">
@@ -93,6 +121,31 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3111943238" Name="PierceShoot" ObjectPath="\Events\Default Work Unit\Projectiles\Pierce\PierceShoot" DurationType="OneShot" DurationMin="1.056508" DurationMax="1.582973">
+					<IncludedMemoryFiles>
+						<File Id="314439610" Language="SFX">
+							<ShortName>Laser.wav</ShortName>
+							<Path>SFX\Laser_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1740006757" Name="PierceStop" ObjectPath="\Events\Default Work Unit\Projectiles\Pierce\PierceStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2007351433" Name="Play_Drop" ObjectPath="\Events\Default Work Unit\Play_Drop" DurationType="OneShot" DurationMin="0.483704" DurationMax="0.483704">
+					<IncludedMemoryFiles>
+						<File Id="299145500" Language="SFX">
+							<ShortName>Drop.wav</ShortName>
+							<Path>SFX\Drop_AAE66485.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3860455926" Name="Play_Pickup" ObjectPath="\Events\Default Work Unit\Play_Pickup" DurationType="OneShot" DurationMin="0.446948" DurationMax="0.446948">
+					<IncludedMemoryFiles>
+						<File Id="556627651" Language="SFX">
+							<ShortName>Pickup.wav</ShortName>
+							<Path>SFX\Pickup_91845143.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="415148874" Name="RangHit" ObjectPath="\Events\Default Work Unit\Projectiles\Boomerang\RangHit" DurationType="OneShot" DurationMin="0.193855" DurationMax="0.193855">
 					<IncludedMemoryFiles>
 						<File Id="950880742" Language="SFX">
@@ -118,6 +171,54 @@
 						<File Id="1056722438" Language="SFX">
 							<ShortName>Throw.wav</ShortName>
 							<Path>SFX\Throw_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2168124593" Name="RollDice" ObjectPath="\Events\Default Work Unit\RollDice" DurationType="OneShot" DurationMin="0.298186" DurationMax="1.048186">
+					<IncludedMemoryFiles>
+						<File Id="42381246" Language="SFX">
+							<ShortName>Dice6.wav</ShortName>
+							<Path>SFX\Dice6_10C4C929.wem</Path>
+						</File>
+						<File Id="165130169" Language="SFX">
+							<ShortName>Dice0.wav</ShortName>
+							<Path>SFX\Dice0_10C4C929.wem</Path>
+						</File>
+						<File Id="167084708" Language="SFX">
+							<ShortName>Dice2.wav</ShortName>
+							<Path>SFX\Dice2_10C4C929.wem</Path>
+						</File>
+						<File Id="255029079" Language="SFX">
+							<ShortName>Dice1.wav</ShortName>
+							<Path>SFX\Dice1_10C4C929.wem</Path>
+						</File>
+						<File Id="259496218" Language="SFX">
+							<ShortName>Dice4.wav</ShortName>
+							<Path>SFX\Dice4_10C4C929.wem</Path>
+						</File>
+						<File Id="287523510" Language="SFX">
+							<ShortName>Dice7.wav</ShortName>
+							<Path>SFX\Dice7_10C4C929.wem</Path>
+						</File>
+						<File Id="446526278" Language="SFX">
+							<ShortName>Dice5.wav</ShortName>
+							<Path>SFX\Dice5_10C4C929.wem</Path>
+						</File>
+						<File Id="565692386" Language="SFX">
+							<ShortName>Dice.wav</ShortName>
+							<Path>SFX\Dice_10C4C929.wem</Path>
+						</File>
+						<File Id="756291841" Language="SFX">
+							<ShortName>Dice9.wav</ShortName>
+							<Path>SFX\Dice9_10C4C929.wem</Path>
+						</File>
+						<File Id="1016357997" Language="SFX">
+							<ShortName>Dice8.wav</ShortName>
+							<Path>SFX\Dice8_10C4C929.wem</Path>
+						</File>
+						<File Id="1064903999" Language="SFX">
+							<ShortName>Dice3.wav</ShortName>
+							<Path>SFX\Dice3_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
