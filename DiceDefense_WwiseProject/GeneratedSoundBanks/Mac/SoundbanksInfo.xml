@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1677930596" Language="SFX" Hash="3400244011">
+		<SoundBank Id="1677930596" Language="SFX" Hash="1898903547">
 			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
 			<ShortName>DiceDefenders</ShortName>
 			<Path>DiceDefenders.bnk</Path>
