@@ -235,6 +235,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Build" ID="{0F1AA560-7FA2-4B5B-8B77-02AD4154F655}">
+					<ChildrenList>
+						<Action Name="" ID="{2798EC1D-AE80-4EF6-A35C-55EA8B485443}" ShortID="977524057">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Build" ID="{F5C54613-6F2B-40C1-86C5-D59A658439E9}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -15,6 +15,12 @@
 					<ChildrenList>
 						<Sound Name="Hit" ID="{EB1CF0D2-E070-420A-819D-93470A37588E}" ShortID="625502636">
 							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -27,6 +33,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -1474,6 +1485,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Scifi, Energy, Force Field, Hum, Loop 01 SND7132" ID="{422CD3E3-A578-4846-8312-5610CBAAAC7B}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Scifi, Energy, Force Field, Hum, Loop 01 SND7132.wav</AudioFile>
 													<MediaIDList>

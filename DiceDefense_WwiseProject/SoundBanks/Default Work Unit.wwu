@@ -9,6 +9,7 @@
 						<ObjectRef Name="RollDice" ID="{A188F044-0134-43BA-BD5B-D95E574B18BB}" WorkUnitID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Drop" ID="{DC15F82A-A79E-4787-B72D-B4E9D07786CC}" WorkUnitID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopMusic" ID="{55506238-E740-4AA6-A646-74EE58F28EED}" WorkUnitID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Build" ID="{0F1AA560-7FA2-4B5B-8B77-02AD4154F655}" WorkUnitID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartMusic" ID="{3764B25D-9AF6-4B97-89B4-75ADFCE5273F}" WorkUnitID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enemy" ID="{1BC4DA6B-DCAD-4C21-AD9A-56C93057132E}" WorkUnitID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pickup" ID="{11474AA7-2088-4DE7-8962-1B526C4D9581}" WorkUnitID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" Origin="Manual" Filter="7"/>

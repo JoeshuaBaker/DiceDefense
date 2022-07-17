@@ -50,6 +50,8 @@ public class TowerBuilder : MonoBehaviour
 
     public void Dropped()
     {
+        AkSoundEngine.PostEvent("Play_Build", gameObject);
+
         droppedId = droppedCount++;
 
         if(TowerManager.instance.CheckValid(this.transform.position))

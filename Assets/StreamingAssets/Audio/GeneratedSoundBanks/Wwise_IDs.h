@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID MISSILESHOOT = 3974466484U;
         static const AkUniqueID PIERCESHOOT = 3111943238U;
         static const AkUniqueID PIERCESTOP = 1740006757U;
+        static const AkUniqueID PLAY_BUILD = 2662543194U;
         static const AkUniqueID PLAY_DROP = 2007351433U;
         static const AkUniqueID PLAY_PICKUP = 3860455926U;
         static const AkUniqueID RANGHIT = 415148874U;

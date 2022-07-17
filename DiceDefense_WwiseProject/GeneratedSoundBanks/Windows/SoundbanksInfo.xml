@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1677930596" Language="SFX" Hash="3533930966">
+		<SoundBank Id="1677930596" Language="SFX" Hash="975495119">
 			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
 			<ShortName>DiceDefenders</ShortName>
 			<Path>DiceDefenders.bnk</Path>
@@ -130,6 +130,22 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1740006757" Name="PierceStop" ObjectPath="\Events\Default Work Unit\Projectiles\Pierce\PierceStop" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="2662543194" Name="Play_Build" ObjectPath="\Events\Default Work Unit\Play_Build" DurationType="OneShot" DurationMin="0.832948" DurationMax="1.144898">
+					<IncludedMemoryFiles>
+						<File Id="407120910" Language="SFX">
+							<ShortName>Build2.wav</ShortName>
+							<Path>SFX\Build2_10C4C929.wem</Path>
+						</File>
+						<File Id="541478416" Language="SFX">
+							<ShortName>Build1.wav</ShortName>
+							<Path>SFX\Build1_10C4C929.wem</Path>
+						</File>
+						<File Id="659108312" Language="SFX">
+							<ShortName>Build3.wav</ShortName>
+							<Path>SFX\Build3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2007351433" Name="Play_Drop" ObjectPath="\Events\Default Work Unit\Play_Drop" DurationType="OneShot" DurationMin="0.483704" DurationMax="0.483704">
 					<IncludedMemoryFiles>
 						<File Id="299145500" Language="SFX">
