@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public EnemyData data;
     Animator animator;
+    public GameObject diceParticle;
 
     public bool finished = false;
     public float slowPercent = 0.0f;
@@ -13,6 +14,7 @@ public class Enemy : MonoBehaviour
 
     private float timer = 0f;
     private bool initialized = false;
+    private int maxHp = 0;
     public float pathLength = 0f;
     public float timeToComplete = 0f;
     public float progress;
@@ -20,6 +22,7 @@ public class Enemy : MonoBehaviour
     public void Init(EnemyData data)
     {
         this.data = data;
+        maxHp = (int) data.hp;
         initialized = true;
         pathLength = data.path.length;
         timeToComplete = pathLength / data.speed;
@@ -50,6 +53,7 @@ public class Enemy : MonoBehaviour
             if (progress >= 1)
             {
                 finished = true;
+                DealDamage();
                 return;
             }
 
@@ -65,7 +69,16 @@ public class Enemy : MonoBehaviour
         data.hp -= damage;
         if(data.hp <= 0)
         {
+<<<<<<< Updated upstream
             AkSoundEngine.PostEvent("EnemyDie", gameObject);
+=======
+            if(TowerUI.instance.GetDiceScore(this.maxHp*(int)data.speed))
+            {
+                GameObject dp = Instantiate(diceParticle, transform.parent.parent);
+                Destroy(dp, 1.5f);
+            }
+
+>>>>>>> Stashed changes
             Destroy(transform.parent.gameObject);
         }
     }
@@ -74,5 +87,16 @@ public class Enemy : MonoBehaviour
     {
         slowPercent = slow;
         this.slowDuration = slowDuration;
+    }
+
+    public void DealDamage()
+    {
+        int damage = (int)data.type + 1;
+        if (data.type == EnemyTypes.Queen || data.type == EnemyTypes.King)
+        {
+            damage *= 2;
+        }
+        TowerUI.instance.DealDamage(damage);
+        GetHit(data.hp);
     }
 }
