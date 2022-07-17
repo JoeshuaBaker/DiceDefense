@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1677930596" Language="SFX" Hash="2150724690">
+		<SoundBank Id="1677930596" Language="SFX" Hash="2909295775">
 			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
 			<ShortName>DiceDefenders</ShortName>
 			<Path>DiceDefenders.bnk</Path>
@@ -25,15 +25,15 @@
 					<IncludedMemoryFiles>
 						<File Id="88358828" Language="SFX">
 							<ShortName>crackle.wav</ShortName>
-							<Path>SFX\crackle_62E8F24D.wem</Path>
+							<Path>SFX\crackle_A2AF74F4.wem</Path>
 						</File>
 						<File Id="642788391" Language="SFX">
 							<ShortName>crackle3.wav</ShortName>
-							<Path>SFX\crackle3_6AF53ABD.wem</Path>
+							<Path>SFX\crackle3_A6D16FA1.wem</Path>
 						</File>
 						<File Id="807866118" Language="SFX">
 							<ShortName>crackle2.wav</ShortName>
-							<Path>SFX\crackle2_68D27A4E.wem</Path>
+							<Path>SFX\crackle2_A3C1E4BE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
