@@ -15,6 +15,7 @@ public class Tower : MonoBehaviour
     public SpriteRenderer radius;
     public Transform projectileParent;
     public List<Enemy> enemiesInRange;
+    public Transform aimTarget;
 
     private Projectile currentProjectile;
     private AttackArea currentArea;
@@ -105,7 +106,8 @@ public class Tower : MonoBehaviour
                 target = closestEnemy,
                 damage = finalDamage,
                 range = finalRange,
-                tower = this
+                tower = this,
+                aimTarget = aimTarget
             };
 
             if (currentPattern.Shoot(currentProjectile, shootData))

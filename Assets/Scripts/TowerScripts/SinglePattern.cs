@@ -7,6 +7,8 @@ public class SinglePattern : ShotPattern
     public override bool Shoot(Projectile projectile, ProjectileData projectileData)
     {
         Projectile projInstance = Instantiate(projectile, bulletParent);
+        projectileData.initialDirection = projectileData.target.transform.position - projectileData.tower.transform.position;
+        projectileData.initialDirection = projectileData.initialDirection.normalized;
         projInstance.Init(projectileData);
         return true;
     }
