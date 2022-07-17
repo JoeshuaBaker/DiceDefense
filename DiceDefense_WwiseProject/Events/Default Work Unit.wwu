@@ -1,6 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{29E0B189-4583-4BD0-91F1-F341F7417A1F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Projectiles" ID="{9AE632B2-DAF0-433C-A131-7A48BEE43F5E}" ShortID="788900827">
+					<ChildrenList>
+						<Folder Name="Ice" ID="{63DF8485-13A0-4B84-9F36-479609D19B6E}" ShortID="267282560">
+							<ChildrenList>
+								<Event Name="IceShoot" ID="{040AC197-ADC4-43A6-BD40-F39F7F2E40E4}">
+									<ChildrenList>
+										<Action Name="" ID="{FB6D4A60-4762-4EA1-8852-7C314826B355}" ShortID="930999767">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ice" ID="{AEFDB752-09AA-47FD-9C44-4A41B103453C}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="IceHit" ID="{719F97B9-E7FD-4266-B3E5-BED12814E7BB}">
+									<ChildrenList>
+										<Action Name="" ID="{C9D88505-820E-49A7-BB2E-FFB4867DA555}" ShortID="679097845">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Ice" ID="{2BF70B03-44C9-424C-A0B3-EFEAEE6D1630}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Missile" ID="{06E13EEF-10C4-4628-A05F-B59C201B2AFF}" ShortID="435704439">
+							<ChildrenList>
+								<Event Name="MissileShoot" ID="{FA3BACB7-96D0-4FF2-BE30-998299ADF460}">
+									<ChildrenList>
+										<Action Name="" ID="{F84323F2-3F84-44DB-BAE1-A588C8060F95}" ShortID="292784863">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bomb" ID="{9D64788F-D3F2-4517-8E29-C241AB96F80E}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="MissileHit" ID="{CBB3362E-B48D-4D9E-A46F-619BA5926592}">
+									<ChildrenList>
+										<Action Name="" ID="{2038ACB5-717F-4D80-8E07-9A41ADCF1EA3}" ShortID="644065120">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bomb" ID="{F8C58FD5-4B37-4A40-AF61-AAC4B90E0098}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="StdShoot" ID="{D3C9DEF0-7DC9-41BE-9910-1CB26510076F}">
+							<ChildrenList>
+								<Action Name="" ID="{BD451BE3-2BD0-4509-9C90-0B1F104E201D}" ShortID="867039166">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Std" ID="{2C602C32-73FB-42F1-81CF-1BFCFE373F3D}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="RangShoot" ID="{574602A8-9E65-4685-96A2-1EE34C531DAE}">
+							<ChildrenList>
+								<Action Name="" ID="{86A7A5C2-27BD-4900-94BD-5EBE4183DF43}" ShortID="790994042">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Boomerang" ID="{2610FAAC-0EDD-461B-BF21-C6D594971086}" WorkUnitID="{6933BDE0-811B-41AA-B190-8B59784035D6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="StartMusic" ID="{3764B25D-9AF6-4B97-89B4-75ADFCE5273F}">
+					<ChildrenList>
+						<Action Name="" ID="{36FCDFF2-633F-443B-8E35-C3DEE1D73907}" ShortID="493936359">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kevin" ID="{5F0290A6-8C1C-413F-81B5-1BF34848A1A6}" WorkUnitID="{2D818205-43DB-43DA-B6EE-986F1F733176}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopMusic" ID="{55506238-E740-4AA6-A646-74EE58F28EED}">
+					<ChildrenList>
+						<Action Name="" ID="{E6E94C81-3C62-482E-A564-FDFA92B2FA64}" ShortID="833255748">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Kevin" ID="{5F0290A6-8C1C-413F-81B5-1BF34848A1A6}" WorkUnitID="{2D818205-43DB-43DA-B6EE-986F1F733176}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

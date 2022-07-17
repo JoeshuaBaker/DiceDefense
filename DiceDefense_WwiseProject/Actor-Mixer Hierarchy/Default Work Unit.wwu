@@ -143,89 +143,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Flames" ID="{F80F9107-9941-4077-89EB-3AC8F6EEB3B2}" ShortID="868913132">
-											<PropertyList>
-												<Property Name="BypassEffect0" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
-												</Property>
-												<Property Name="InitialDelay" Type="Real64">
-													<ValueList>
-														<Value>0.025</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverrideEffect" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-12</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-												</Reference>
-												<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
-													<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="Effect1" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
-													<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="flames2" ID="{6035D252-C4BF-46C5-855E-CD01271EC667}" ShortID="754590949">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="flames2" ID="{9BC32C5C-7E35-44BE-9C8C-07D4BF82C008}">
-															<Language>SFX</Language>
-															<AudioFile>flames2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1046877750"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="flames2" ID="{9BC32C5C-7E35-44BE-9C8C-07D4BF82C008}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="flames" ID="{DBD93ADE-9FD2-4800-8679-F7217DDDA1D7}" ShortID="383735705">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="flames" ID="{7EEE2CD9-668E-463B-B186-10F92F8BB12B}">
-															<Language>SFX</Language>
-															<AudioFile>flames.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="792374728"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="flames" ID="{7EEE2CD9-668E-463B-B186-10F92F8BB12B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
 										<BlendContainer Name="Fire" ID="{B85C1581-A01A-4ED6-8044-DB66E36DC843}" ShortID="934707898">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -821,103 +738,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Crackle" ID="{E3A8E7FA-7B5E-4A53-929D-ABB8B4F07B68}" ShortID="1005147193">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="crackle2" ID="{1A505A94-33D7-4C20-87CA-A7122A23697E}" ShortID="1016476839">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="crackle2" ID="{63ECB2C4-DD89-422E-ABE8-F4E89DDE3007}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.04030102862401"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.617613263662953"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>crackle2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="807866118"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="crackle2" ID="{63ECB2C4-DD89-422E-ABE8-F4E89DDE3007}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="crackle3" ID="{41A5203E-ACD1-4EDA-8944-22BAF9DE4D05}" ShortID="388573191">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="crackle3" ID="{9D962C6E-8F4C-4F66-BCCF-79347D596CA5}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.182330671398994"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.653585329784087"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>crackle3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="642788391"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="crackle3" ID="{9D962C6E-8F4C-4F66-BCCF-79347D596CA5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="crackle" ID="{0DC2F388-D669-4E7E-B5CA-9932005F6A10}" ShortID="194377927">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="crackle" ID="{D7A416E6-DFD2-427F-9AD0-B588D66FA93F}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0577988103453941"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.672392827018086"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>crackle.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="88358828"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="crackle" ID="{D7A416E6-DFD2-427F-9AD0-B588D66FA93F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Freeze" ID="{293FB082-C4E5-4B96-855D-F809F87C0B9B}" ShortID="485844280">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
@@ -1515,7 +1335,19 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Build1" ID="{37D461E6-26FD-453D-B8D7-40A49398F834}">
+											<Language>SFX</Language>
+											<AudioFile>Build1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="541478416"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Build1" ID="{37D461E6-26FD-453D-B8D7-40A49398F834}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="ThirdLevel" ID="{DF012A38-D459-4B77-9777-429A9E4510DF}" ShortID="968851832">
 									<ReferenceList>
@@ -1526,7 +1358,19 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Build3" ID="{B5B42CD4-9CA4-4EC1-9DBD-0821A4647919}">
+											<Language>SFX</Language>
+											<AudioFile>Build3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="659108312"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Build3" ID="{B5B42CD4-9CA4-4EC1-9DBD-0821A4647919}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SecondLevel" ID="{5ADC5D8B-9320-4EB7-A59F-2BB4C8246B69}" ShortID="403566052">
 									<ReferenceList>
@@ -1537,10 +1381,27 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Build2" ID="{E173A5BA-3013-4546-B024-DF1F72E92C82}">
+											<Language>SFX</Language>
+											<AudioFile>Build2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="407120910"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
 									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Build2" ID="{E173A5BA-3013-4546-B024-DF1F72E92C82}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<ObjectLists/>
+							<Playlist>
+								<ItemRef Name="FirstLevel" ID="{2B24D629-8E5D-4421-B4B3-F2F1FF600027}"/>
+								<ItemRef Name="SecondLevel" ID="{5ADC5D8B-9320-4EB7-A59F-2BB4C8246B69}"/>
+								<ItemRef Name="ThirdLevel" ID="{DF012A38-D459-4B77-9777-429A9E4510DF}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 						<Sound Name="Destroy" ID="{A06CD3E3-54BF-48AD-8EB5-EF9FEA2B4F1E}" ShortID="929806478">
 							<ReferenceList>
@@ -1570,6 +1431,252 @@
 								<ActiveSource Name="Destroy" ID="{5BB93BC7-69CE-4B92-A51B-954A3AE1BA58}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<SwitchContainer Name="HIt" ID="{3112B8E7-A846-43C6-ACDE-490F89E599CA}" ShortID="322196573">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="Ice" ID="{2BF70B03-44C9-424C-A0B3-EFEAEE6D1630}" ShortID="375203787">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Crackle" ID="{E3A8E7FA-7B5E-4A53-929D-ABB8B4F07B68}" ShortID="1005147193">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}">
+														<Effect Name="Small_Wooden_Room1 (Custom)" ID="{C415C9AD-FDB4-4463-BE9C-C6B3C6FBD47A}" ShortID="957666895" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+															<PropertyList>
+																<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																<Property Name="HFRatio" Type="Real32" Value="8.4"/>
+																<Property Name="NumberOfDelays" Type="int32" Value="12"/>
+																<Property Name="PreDelay" Type="Real32" Value="0.2"/>
+																<Property Name="ReverbTime" Type="Real32" Value="2.2"/>
+																<Property Name="WetLevel" Type="Real32" Value="-38"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+												<Reference Name="Effect1" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+													<ObjectRef Name="Fear_no_Evil" ID="{A1F17D99-0801-4F32-B74E-ADB2D9ACC556}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="crackle2" ID="{1A505A94-33D7-4C20-87CA-A7122A23697E}" ShortID="1016476839">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crackle2" ID="{63ECB2C4-DD89-422E-ABE8-F4E89DDE3007}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.219100601210839"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.97521240883661"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>crackle2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="807866118"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="crackle2" ID="{63ECB2C4-DD89-422E-ABE8-F4E89DDE3007}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crackle3" ID="{41A5203E-ACD1-4EDA-8944-22BAF9DE4D05}" ShortID="388573191">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crackle3" ID="{9D962C6E-8F4C-4F66-BCCF-79347D596CA5}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.337821299304833"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.877538249081302"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>crackle3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="642788391"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="crackle3" ID="{9D962C6E-8F4C-4F66-BCCF-79347D596CA5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="crackle" ID="{0DC2F388-D669-4E7E-B5CA-9932005F6A10}" ShortID="194377927">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="crackle" ID="{D7A416E6-DFD2-427F-9AD0-B588D66FA93F}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.327736922417006"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.906411754822104"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>crackle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="88358828"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="crackle" ID="{D7A416E6-DFD2-427F-9AD0-B588D66FA93F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+								<BlendContainer Name="Bomb" ID="{F8C58FD5-4B37-4A40-AF61-AAC4B90E0098}" ShortID="39672678">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Flames" ID="{F80F9107-9941-4077-89EB-3AC8F6EEB3B2}" ShortID="868913132">
+											<PropertyList>
+												<Property Name="BypassEffect0" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.025</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+													<ObjectRef Name="Small_Wooden_Room1" ID="{F7CBE859-36A8-4174-B553-AE32A7FE95FA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="Effect1" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Fast_Release" ID="{2144284E-7ADD-4341-86A4-4E468BEC9A2D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="flames2" ID="{6035D252-C4BF-46C5-855E-CD01271EC667}" ShortID="754590949">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="flames2" ID="{9BC32C5C-7E35-44BE-9C8C-07D4BF82C008}">
+															<Language>SFX</Language>
+															<AudioFile>flames2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1046877750"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="flames2" ID="{9BC32C5C-7E35-44BE-9C8C-07D4BF82C008}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="flames" ID="{DBD93ADE-9FD2-4800-8679-F7217DDDA1D7}" ShortID="383735705">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="flames" ID="{7EEE2CD9-668E-463B-B186-10F92F8BB12B}">
+															<Language>SFX</Language>
+															<AudioFile>flames.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="792374728"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="flames" ID="{7EEE2CD9-668E-463B-B186-10F92F8BB12B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<ObjectLists/>
+								</BlendContainer>
+							</ChildrenList>
+							<ObjectLists/>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Ice" ID="{2BF70B03-44C9-424C-A0B3-EFEAEE6D1630}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Bomb" ID="{F8C58FD5-4B37-4A40-AF61-AAC4B90E0098}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

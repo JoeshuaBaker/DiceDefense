@@ -3,7 +3,15 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{BB1F0927-B92A-4DA6-9906-9C8B088A289F}">
 			<PropertyList>
+				<Property Name="Event Action List\{040AC197-ADC4-43A6-BD40-F39F7F2E40E4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3764B25D-9AF6-4B97-89B4-75ADFCE5273F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{55506238-E740-4AA6-A646-74EE58F28EED}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{574602A8-9E65-4685-96A2-1EE34C531DAE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{719F97B9-E7FD-4266-B3E5-BED12814E7BB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8A7156B2-8310-413B-BFD4-2C498393072F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{CBB3362E-B48D-4D9E-A46F-619BA5926592}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D3C9DEF0-7DC9-41BE-9910-1CB26510076F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FA3BACB7-96D0-4FF2-BE30-998299ADF460}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -20,8 +28,12 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="0x8gQc+jdk6R0/R1FDQ9NMUc2AbL6yRMulEGF0pIw/M="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="vvGbcQCPFEyTDDfZSFY8RQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="ve7tyOzh2k2cNQP0BTus+wEr397/////YLOGcFZfB0y5qoFjmtaoXQEr397/////"/>
+				<Property Name="Interactive Music\x64_{513B6476-8576-4D99-9F8C-A1614F7A6B73} - SegmentEditorZoomInfo" Type="string" Value="XLnkEw2txj9vGD4ipsT5PwAAAAAAIGFAAAAAAAAA8D8AAAAAAIScQAAAAAAAABBA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>

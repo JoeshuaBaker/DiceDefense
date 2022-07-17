@@ -18,6 +18,8 @@ public class MissileProjectile : Projectile
         Collider[] colliders = Physics.OverlapSphere(enemy.transform.position, explodeRadius, 1 << LayerMask.NameToLayer("Enemy"));
         foreach (Collider collider in colliders)
         {
+            AkSoundEngine.PostEvent("MissileHit", gameObject);
+
             Enemy splashEnemy = collider.GetComponent<Enemy>();
             if (splashEnemy == null)
                 continue;
@@ -33,6 +35,8 @@ public class MissileProjectile : Projectile
     // Start is called before the first frame update
     void Start()
     {
+        AkSoundEngine.PostEvent("MissileShoot", gameObject);
+
         meshRenderer = GetComponent<MeshRenderer>();
     }
 

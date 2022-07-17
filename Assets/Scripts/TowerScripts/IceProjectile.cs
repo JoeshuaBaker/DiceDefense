@@ -17,6 +17,8 @@ public class IceProjectile : Projectile
 
     private void Start()
     {
+        AkSoundEngine.PostEvent("IceShoot", gameObject);
+
         meshRenderer = GetComponent<SkinnedMeshRenderer>();
     }
 
@@ -29,6 +31,8 @@ public class IceProjectile : Projectile
         Collider[] colliders = Physics.OverlapSphere(enemy.transform.position, explodeRadius, 1 << LayerMask.NameToLayer("Enemy"));
         foreach(Collider collider in colliders)
         {
+            AkSoundEngine.PostEvent("IceHit", gameObject);
+
             Enemy splashEnemy = collider.GetComponent<Enemy>();
             if (splashEnemy == null)
                 continue;

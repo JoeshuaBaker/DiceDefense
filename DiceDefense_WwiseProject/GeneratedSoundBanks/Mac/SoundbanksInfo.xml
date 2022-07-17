@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="4090616564">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1677930596" Language="SFX" Hash="2150724690">
+			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
+			<ShortName>DiceDefenders</ShortName>
+			<Path>DiceDefenders.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3694142913" Name="IceHit" ObjectPath="\Events\Default Work Unit\Projectiles\Ice\IceHit" DurationType="OneShot" DurationMin="0.877538" DurationMax="0.975212">
+					<IncludedMemoryFiles>
+						<File Id="88358828" Language="SFX">
+							<ShortName>crackle.wav</ShortName>
+							<Path>SFX\crackle_62E8F24D.wem</Path>
+						</File>
+						<File Id="642788391" Language="SFX">
+							<ShortName>crackle3.wav</ShortName>
+							<Path>SFX\crackle3_6AF53ABD.wem</Path>
+						</File>
+						<File Id="807866118" Language="SFX">
+							<ShortName>crackle2.wav</ShortName>
+							<Path>SFX\crackle2_68D27A4E.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1091888827" Name="IceShoot" ObjectPath="\Events\Default Work Unit\Projectiles\Ice\IceShoot" DurationType="OneShot" DurationMin="0.667802" DurationMax="1.004377">
+					<IncludedMemoryFiles>
+						<File Id="78021377" Language="SFX">
+							<ShortName>Swoop3.wav</ShortName>
+							<Path>SFX\Swoop3_C0B0975A.wem</Path>
+						</File>
+						<File Id="213763110" Language="SFX">
+							<ShortName>Freeze2.wav</ShortName>
+							<Path>SFX\Freeze2_6AE1AFB0.wem</Path>
+						</File>
+						<File Id="227188210" Language="SFX">
+							<ShortName>Freeze3.wav</ShortName>
+							<Path>SFX\Freeze3_72FBCC52.wem</Path>
+						</File>
+						<File Id="348723050" Language="SFX">
+							<ShortName>Magic2.wav</ShortName>
+							<Path>SFX\Magic2_3C28319D.wem</Path>
+						</File>
+						<File Id="398492661" Language="SFX">
+							<ShortName>Magic.wav</ShortName>
+							<Path>SFX\Magic_724654DE.wem</Path>
+						</File>
+						<File Id="787268208" Language="SFX">
+							<ShortName>Swoop.wav</ShortName>
+							<Path>SFX\Swoop_B0FD0CD6.wem</Path>
+						</File>
+						<File Id="887727235" Language="SFX">
+							<ShortName>Swoop2.wav</ShortName>
+							<Path>SFX\Swoop2_2EAD6DC8.wem</Path>
+						</File>
+						<File Id="988927137" Language="SFX">
+							<ShortName>Freeze.wav</ShortName>
+							<Path>SFX\Freeze_49729CA2.wem</Path>
+						</File>
+						<File Id="990782159" Language="SFX">
+							<ShortName>Magic3.wav</ShortName>
+							<Path>SFX\Magic3_F732A4F8.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2305532690" Name="MissileHit" ObjectPath="\Events\Default Work Unit\Projectiles\Missile\MissileHit" DurationType="OneShot" DurationMin="1.142642" DurationMax="1.251667">
+					<IncludedMemoryFiles>
+						<File Id="792374728" Language="SFX">
+							<ShortName>flames.wav</ShortName>
+							<Path>SFX\flames_10C4C929.wem</Path>
+						</File>
+						<File Id="1046877750" Language="SFX">
+							<ShortName>flames2.wav</ShortName>
+							<Path>SFX\flames2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3974466484" Name="MissileShoot" ObjectPath="\Events\Default Work Unit\Projectiles\Missile\MissileShoot" DurationType="OneShot" DurationMin="0.498312" DurationMax="1.185193">
+					<IncludedMemoryFiles>
+						<File Id="86948849" Language="SFX">
+							<ShortName>Bomb 20-FarExplosion03.wav</ShortName>
+							<Path>SFX\Bomb 20-FarExplosion03_318FC105.wem</Path>
+						</File>
+						<File Id="122413257" Language="SFX">
+							<ShortName>Bomb 22-Underwater Bomb.wav</ShortName>
+							<Path>SFX\Bomb 22-Underwater Bomb_B56001C3.wem</Path>
+						</File>
+						<File Id="610155915" Language="SFX">
+							<ShortName>Bomb 21-Explode.wav</ShortName>
+							<Path>SFX\Bomb 21-Explode_04965B79.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2873631388" Name="RangShoot" ObjectPath="\Events\Default Work Unit\Projectiles\RangShoot" DurationType="OneShot" DurationMin="0.584147" DurationMax="0.827919">
+					<IncludedMemoryFiles>
+						<File Id="74964241" Language="SFX">
+							<ShortName>Fly2.wav</ShortName>
+							<Path>SFX\Fly2_959B5E98.wem</Path>
+						</File>
+						<File Id="375455987" Language="SFX">
+							<ShortName>Fly3.wav</ShortName>
+							<Path>SFX\Fly3_561F5C1E.wem</Path>
+						</File>
+						<File Id="708485099" Language="SFX">
+							<ShortName>Fly.wav</ShortName>
+							<Path>SFX\Fly_10C4C929.wem</Path>
+						</File>
+						<File Id="1056722438" Language="SFX">
+							<ShortName>Throw.wav</ShortName>
+							<Path>SFX\Throw_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="981033162" Language="SFX">
+							<ShortName>Cartoon Battle.wav</ShortName>
+							<Path>SFX\Cartoon Battle_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2748335401" Name="StdShoot" ObjectPath="\Events\Default Work Unit\Projectiles\StdShoot" DurationType="OneShot" DurationMin="0.368612" DurationMax="0.552294">
+					<IncludedMemoryFiles>
+						<File Id="805077479" Language="SFX">
+							<ShortName>woosh2.wav</ShortName>
+							<Path>SFX\woosh2_10C4C929.wem</Path>
+						</File>
+						<File Id="880983648" Language="SFX">
+							<ShortName>woosh3.wav</ShortName>
+							<Path>SFX\woosh3_10C4C929.wem</Path>
+						</File>
+						<File Id="895087983" Language="SFX">
+							<ShortName>base.wav</ShortName>
+							<Path>SFX\base_10C4C929.wem</Path>
+						</File>
+						<File Id="949866216" Language="SFX">
+							<ShortName>woosh.wav</ShortName>
+							<Path>SFX\woosh_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1917263390" Name="StopMusic" ObjectPath="\Events\Default Work Unit\StopMusic" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="2011258708" Name="ProjectileType" ObjectPath="\Switches\Default Work Unit\ProjectileType" GUID="{044F21E5-DDEB-40A1-93FA-DD4173D80DDF}">
+					<Switches>
+						<Switch Id="628126516" Name="Std" ObjectPath="\Switches\Default Work Unit\ProjectileType\Std" GUID="{EFD682A0-6A50-4C25-BB08-2C486FE68233}"/>
+						<Switch Id="2623859709" Name="Homing" ObjectPath="\Switches\Default Work Unit\ProjectileType\Homing" GUID="{12FA74ED-F111-40CB-824C-B8148F8D5950}"/>
+						<Switch Id="1503331101" Name="Pierce" ObjectPath="\Switches\Default Work Unit\ProjectileType\Pierce" GUID="{FCFF6265-A5B0-492B-9B96-E159113872DD}"/>
+						<Switch Id="344481046" Name="Ice" ObjectPath="\Switches\Default Work Unit\ProjectileType\Ice" GUID="{51AB1C5F-23BD-4DE4-B9C0-EB7B199CAD3B}"/>
+						<Switch Id="2060181539" Name="Rang" ObjectPath="\Switches\Default Work Unit\ProjectileType\Rang" GUID="{E1D3A3BA-88E7-4ED0-BF26-5CFE978268A2}"/>
+						<Switch Id="1727945837" Name="Bomb" ObjectPath="\Switches\Default Work Unit\ProjectileType\Bomb" GUID="{B7FF9A73-B477-42A6-B8C7-89CC72F32905}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

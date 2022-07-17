@@ -17,4 +17,9 @@ public class BulletProjectile : Projectile
         this.transform.position = this.transform.position + (initialDirection) * flySpeed * Time.deltaTime;
         base.Update();
     }
+
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("StdShoot", gameObject);
+    }
 }

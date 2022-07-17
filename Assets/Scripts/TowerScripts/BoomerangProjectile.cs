@@ -25,7 +25,7 @@ public class BoomerangProjectile : Projectile
     // Start is called before the first frame update
     void Start()
     {
-
+        AkSoundEngine.PostEvent("RangShoot", gameObject);
     }
 
     // Update is called once per frame
