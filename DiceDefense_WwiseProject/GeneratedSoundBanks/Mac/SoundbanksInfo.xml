@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4090616564">
+		<SoundBank Id="1355168291" Language="SFX" Hash="680709378">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1677930596" Language="SFX" Hash="2918789546">
+		<SoundBank Id="1677930596" Language="SFX" Hash="2290587722">
 			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
 			<ShortName>DiceDefenders</ShortName>
 			<Path>DiceDefenders.bnk</Path>
@@ -77,31 +77,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2305532690" Name="MissileHit" ObjectPath="\Events\Default Work Unit\Projectiles\Missile\MissileHit" DurationType="OneShot" DurationMin="1.142642" DurationMax="1.251667">
+				<Event Id="2305532690" Name="MissileHit" ObjectPath="\Events\Default Work Unit\Projectiles\Missile\MissileHit" DurationType="OneShot" DurationMin="1.96263" DurationMax="1.96263">
 					<IncludedMemoryFiles>
-						<File Id="792374728" Language="SFX">
-							<ShortName>flames.wav</ShortName>
-							<Path>SFX\flames_10C4C929.wem</Path>
-						</File>
-						<File Id="1046877750" Language="SFX">
-							<ShortName>flames2.wav</ShortName>
-							<Path>SFX\flames2_10C4C929.wem</Path>
+						<File Id="884883331" Language="SFX">
+							<ShortName>bombhit.wav</ShortName>
+							<Path>SFX\bombhit_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3974466484" Name="MissileShoot" ObjectPath="\Events\Default Work Unit\Projectiles\Missile\MissileShoot" DurationType="OneShot" DurationMin="0.498312" DurationMax="1.185193">
+				<Event Id="3974466484" Name="MissileShoot" ObjectPath="\Events\Default Work Unit\Projectiles\Missile\MissileShoot" DurationType="OneShot" DurationMin="1.465918" DurationMax="1.465918">
 					<IncludedMemoryFiles>
-						<File Id="86948849" Language="SFX">
-							<ShortName>Bomb 20-FarExplosion03.wav</ShortName>
-							<Path>SFX\Bomb 20-FarExplosion03_318FC105.wem</Path>
-						</File>
-						<File Id="122413257" Language="SFX">
-							<ShortName>Bomb 22-Underwater Bomb.wav</ShortName>
-							<Path>SFX\Bomb 22-Underwater Bomb_B56001C3.wem</Path>
-						</File>
-						<File Id="610155915" Language="SFX">
-							<ShortName>Bomb 21-Explode.wav</ShortName>
-							<Path>SFX\Bomb 21-Explode_04965B79.wem</Path>
+						<File Id="885605500" Language="SFX">
+							<ShortName>fire.wav</ShortName>
+							<Path>SFX\fire_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -117,15 +105,15 @@
 					<IncludedMemoryFiles>
 						<File Id="74964241" Language="SFX">
 							<ShortName>Fly2.wav</ShortName>
-							<Path>SFX\Fly2_E4BBD438.wem</Path>
+							<Path>SFX\Fly2_038BF2E5.wem</Path>
 						</File>
 						<File Id="375455987" Language="SFX">
 							<ShortName>Fly3.wav</ShortName>
-							<Path>SFX\Fly3_3729BB2C.wem</Path>
+							<Path>SFX\Fly3_132E0AC5.wem</Path>
 						</File>
 						<File Id="708485099" Language="SFX">
 							<ShortName>Fly.wav</ShortName>
-							<Path>SFX\Fly_92E0D188.wem</Path>
+							<Path>SFX\Fly_BBB51E71.wem</Path>
 						</File>
 						<File Id="1056722438" Language="SFX">
 							<ShortName>Throw.wav</ShortName>
@@ -153,19 +141,19 @@
 					<IncludedMemoryFiles>
 						<File Id="80771577" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_129CD6BE.wem</Path>
+							<Path>SFX\gun_1739914D.wem</Path>
 						</File>
 						<File Id="84667249" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_5AA09454.wem</Path>
+							<Path>SFX\gun_88A90789.wem</Path>
 						</File>
 						<File Id="489322990" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_953D814B.wem</Path>
+							<Path>SFX\gun_1590FE9C.wem</Path>
 						</File>
 						<File Id="757506751" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_6E628798.wem</Path>
+							<Path>SFX\gun_43BAC151.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

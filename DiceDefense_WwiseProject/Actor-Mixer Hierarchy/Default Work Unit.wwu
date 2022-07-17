@@ -144,6 +144,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<BlendContainer Name="Fire" ID="{B85C1581-A01A-4ED6-8044-DB66E36DC843}" ShortID="934707898">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
@@ -166,6 +173,11 @@
 																	</Modifier>
 																</ModifierInfo>
 															</ModifierList>
+														</Property>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
 														</Property>
 														<Property Name="InitialDelay" Type="Real64">
 															<ModifierList>
@@ -257,6 +269,11 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 														<Property Name="InitialDelay" Type="Real64">
 															<ModifierList>
 																<ModifierInfo>
@@ -345,6 +362,11 @@
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 														<Property Name="InitialDelay" Type="Real64">
 															<ModifierList>
 																<ModifierInfo>
@@ -420,6 +442,29 @@
 														<ActiveSource Name="Bomb 22-Underwater Bomb" ID="{05D4E576-2CDB-470D-B88F-84A05521FD44}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="fire" ID="{A3161FBD-2131-4ED8-BB64-CB488A4E6226}" ShortID="818181942">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="fire" ID="{1D2FDC1C-BB73-4E3D-BC1E-ED341046ECDB}">
+															<Language>SFX</Language>
+															<AudioFile>fire.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="885605500"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="fire" ID="{1D2FDC1C-BB73-4E3D-BC1E-ED341046ECDB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 											<ObjectLists/>
 										</BlendContainer>
@@ -445,126 +490,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="base" ID="{8550B274-3B5A-4529-B747-81914212254D}" ShortID="64669976">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{1D4FA04C-FDF5-4896-B534-59C4264E5BE8}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="400"/>
-																	<Property Name="Min" Type="Real64" Value="-300"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</Sound>
-										<RandomSequenceContainer Name="woosh" ID="{BF35C74C-F859-42CD-9D54-0404B5857C10}" ShortID="638550505">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="woosh3" ID="{BE37834F-E9BF-4E6C-9CC6-55BFC183EDDB}" ShortID="41473423">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="woosh3" ID="{B6F60C35-6791-4F77-B539-E9419E43064D}">
-															<Language>SFX</Language>
-															<AudioFile>woosh3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="880983648"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="woosh3" ID="{B6F60C35-6791-4F77-B539-E9419E43064D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="woosh" ID="{9BFE219F-2830-4154-88A3-B3926E0E1B0A}" ShortID="185350991">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="woosh" ID="{B3C7EFF3-7588-4703-A233-9A76B7BB4371}">
-															<Language>SFX</Language>
-															<AudioFile>woosh.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="949866216"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="woosh" ID="{B3C7EFF3-7588-4703-A233-9A76B7BB4371}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="woosh2" ID="{F12F9BB6-F746-4B59-BC2B-01CB361B1F5E}" ShortID="227583994">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="woosh2" ID="{305ADAD5-6E9A-4ED2-87DE-2E4BEE8FD3AA}">
-															<Language>SFX</Language>
-															<AudioFile>woosh2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="805077479"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="woosh2" ID="{305ADAD5-6E9A-4ED2-87DE-2E4BEE8FD3AA}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="GunShoot" ID="{BF091B2B-29B2-48B3-A3B0-749D7722989D}" ShortID="878128968">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1699,6 +1624,13 @@
 									<ObjectLists/>
 								</BlendContainer>
 								<BlendContainer Name="Bomb" ID="{F8C58FD5-4B37-4A40-AF61-AAC4B90E0098}" ShortID="39672678">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
@@ -1713,6 +1645,11 @@
 												<Property Name="BypassEffect0" Type="bool">
 													<ValueList>
 														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
 													</ValueList>
 												</Property>
 												<Property Name="InitialDelay" Type="Real64">
@@ -1791,6 +1728,29 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
+										<Sound Name="bombhit" ID="{5102CC7B-BC2A-4B49-8124-CE6871B23052}" ShortID="714275165">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8258257F-FADD-404E-A967-ABC0EC5EE191}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{93D44BAB-133C-4168-BC56-90A80557754E}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="bombhit" ID="{51F4EEF9-D421-4CDF-AE1C-447251F3B17B}">
+													<Language>SFX</Language>
+													<AudioFile>bombhit.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="884883331"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="bombhit" ID="{51F4EEF9-D421-4CDF-AE1C-447251F3B17B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<ObjectLists/>
 								</BlendContainer>

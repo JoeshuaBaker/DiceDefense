@@ -24,36 +24,31 @@ Switch	ID	Name	Switch Group			Notes
 Effect plug-ins	ID	Name	Type				Notes
 	819943492	Fear_no_Evil	Wwise Harmonizer			
 	981474296	Small_Wooden_Room1 (Custom)	Wwise Matrix Reverb			
-	1459522457	Brick_Wall_Minus_1dB_Peak_Fast_Release	Wwise Peak Limiter			
-	1551236760	Small_Wooden_Room1	Wwise Matrix Reverb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	74964241	Fly2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Fly2_E4BBD438.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly2		137912
+	74964241	Fly2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Fly2_038BF2E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly2		137912
 	78021377	Swoop3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Swoop3_C0B0975A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Swoop\Swoop3		41188
-	80771577	gun_04	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_129CD6BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_04		158040
-	84667249	gun_02	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_5AA09454.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_02		100244
-	86948849	Bomb 20-FarExplosion03	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Bomb 20-FarExplosion03_318FC105.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Bomb\Fire\Bomb 20-FarExplosion03		131768
+	80771577	gun_04	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_1739914D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_04		158040
+	84667249	gun_02	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_88A90789.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_02		100244
 	88358828	crackle	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\crackle_A2AF74F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Ice\Crackle\crackle		159956
-	122413257	Bomb 22-Underwater Bomb	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Bomb 22-Underwater Bomb_B56001C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Bomb\Fire\Bomb 22-Underwater Bomb		119332
 	213763110	Freeze2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Freeze2_6AE1AFB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Freeze\Freeze2		89040
 	227188210	Freeze3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Freeze3_72FBCC52.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Freeze\Freeze3		94532
 	348723050	Magic2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Magic2_3C28319D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Magic\Magic2		82584
-	375455987	Fly3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Fly3_3729BB2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly3		129892
+	375455987	Fly3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Fly3_132E0AC5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly3		129892
 	398492661	Magic	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Magic_724654DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Magic\Magic		128460
-	489322990	gun_01	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_953D814B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_01		107948
+	489322990	gun_01	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_1590FE9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_01		107948
 	513884019	StdHit	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gunhit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\StdHit		27848
-	610155915	Bomb 21-Explode	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Bomb 21-Explode_04965B79.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Bomb\Fire\Bomb 21-Explode		119336
 	642788391	crackle3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\crackle3_A6D16FA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Ice\Crackle\crackle3		154860
-	708485099	Fly	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Fly_92E0D188.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly		133988
-	757506751	gun_03	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_6E628798.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_03		104096
+	708485099	Fly	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Fly_BBB51E71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly		133988
+	757506751	gun_03	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\gun_43BAC151.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_03		104096
 	787268208	Swoop	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Swoop_B0FD0CD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Swoop\Swoop		39552
-	792374728	flames	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\flames_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Bomb\Flames\flames		216448
 	807866118	crackle2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\crackle2_A3C1E4BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Ice\Crackle\crackle2		172092
+	884883331	bombhit	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\bombhit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Bomb\bombhit		346272
+	885605500	fire	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\fire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Bomb\Fire\fire		258652
 	887727235	Swoop2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Swoop2_2EAD6DC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Swoop\Swoop2		31936
 	950880742	RangHit	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\RangHit		34260
 	981033162	CartoonBattle	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Cartoon Battle_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Kevin\Macleod\CartoonBattle		19510336
 	988927137	Freeze	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Freeze_49729CA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Freeze\Freeze		103464
 	990782159	Magic3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Magic3_F732A4F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Magic\Magic3		141956
-	1046877750	flames2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\flames2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Bomb\Flames\flames2		197216
 	1056722438	Throw	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Windows\SFX\Throw_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Throw		33356
 
