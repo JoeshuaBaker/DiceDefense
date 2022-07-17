@@ -43,8 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4a0a1bf3cf7dc4caaaa235f9405f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patternType: 0
+  patternType: 4
   damageMultiplier: 2
   rangeMultiplier: 2
   fireRateMultiplier: 2
-  bulletParent: {fileID: 0}

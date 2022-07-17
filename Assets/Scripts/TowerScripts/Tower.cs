@@ -17,9 +17,14 @@ public class Tower : MonoBehaviour
     public List<Enemy> enemiesInRange;
     public Transform aimTarget;
 
+    public AnyDice baseDice;
+    public AnyDice spireDice;
+    public AnyDice parapetDice;
+
     private Projectile currentProjectile;
     private AttackArea currentArea;
     private ShotPattern currentPattern;
+    private bool aimToggle = false;
 
     public float timer;
     public float failCheckTimeout = 0.25f;
@@ -76,7 +81,6 @@ public class Tower : MonoBehaviour
             Collider[] colliders = Physics.OverlapSphere(this.transform.position, finalRange/2, 1 << LayerMask.NameToLayer("Enemy"));
             if(colliders.Length == 0)
             {
-                Debug.Log("No colliders found. Reducing tower timer.");
                 timer -= failCheckTimeout;
                 return;
             }
@@ -145,4 +149,46 @@ public class Tower : MonoBehaviour
             currentPattern.bulletParent = projectileParent;
         }
     }
+
+    public void SetFaces(int bottom, int spire, int parapet)
+    {
+        baseDice.ShowFace(bottom);
+        spireDice.ShowFace(spire);
+        parapetDice.ShowFace(parapet);
+    }
+
+    public void OnMouseOver()
+    {
+        TowerUI.instance.ShowText((int)projectileType + 1, (int)areaType + 1, (int)patternType + 1);
+        if(patternType == ShotPattern.PatternType.Aimed)
+        {
+            aimTarget.gameObject.SetActive(true);
+        }
+        radius.gameObject.SetActive(true);
+    }
+
+    public void OnMouseExit()
+    {
+        radius.gameObject.SetActive(false);
+        if (patternType == ShotPattern.PatternType.Aimed)
+        {
+            aimTarget.gameObject.SetActive(true);
+        }
+        TowerUI.instance.ShowText();
+    }
+
+    /*
+    public void OnMouseDown()
+    {
+        if (patternType == ShotPattern.PatternType.Aimed)
+        {
+            if(aimToggle)
+            {
+                aimToggle = false;
+            }
+
+            aimToggle = true;
+        }
+    }
+    */
 }

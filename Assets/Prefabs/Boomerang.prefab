@@ -118,6 +118,7 @@ MonoBehaviour:
   flySpeed: 25
   numEnemiesPierce: 255
   degreesPerSecond: 1080
+  minSpeed: 0.1
   travelCurve:
     serializedVersion: 2
     m_Curve:
@@ -151,6 +152,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  outIn: 1
+  distFromTower: 0
 --- !u!1001 &3127018111151103560
 PrefabInstance:
   m_ObjectHideFlags: 0
