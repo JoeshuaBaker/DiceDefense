@@ -30,14 +30,12 @@ public class DiceText : MonoBehaviour
 
     public void ShowText(int face)
     {
-        Debug.Log(name + " text showing face " + face);
-
         if(face > 0 && face <= 6)
         {
             sprite.ShowFace(face);
         }
         string text = originalText.Clone() as string;
-        Debug.Log(text);
+
         switch (type)
         {
             case TextType.Base:

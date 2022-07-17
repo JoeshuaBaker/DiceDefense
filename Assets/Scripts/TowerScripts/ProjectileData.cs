@@ -13,7 +13,7 @@ public class ProjectileData
     {
         ProjectileData copy = new ProjectileData();
         copy.target = target;
-        copy.initialDirection = initialDirection;
+        copy.initialDirection = new Vector3(initialDirection.x, initialDirection.y, initialDirection.z);
         copy.tower = tower;
         copy.damage = damage;
         copy.range = range;

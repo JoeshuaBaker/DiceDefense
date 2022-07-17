@@ -37,7 +37,7 @@ public class MissileProjectile : Projectile
     {
         AkSoundEngine.PostEvent("MissileShoot", gameObject);
 
-        meshRenderer = GetComponent<MeshRenderer>();
+        meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
 
     // Update is called once per frame

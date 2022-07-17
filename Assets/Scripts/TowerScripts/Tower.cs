@@ -52,6 +52,8 @@ public class Tower : MonoBehaviour
             Vector3 closestPathPoint = TowerManager.instance.GetClosestPointOnPath(transform.position);
             aimTarget.position = closestPathPoint;
         }
+
+        SetFaces((int)projectileType + 1, (int)areaType + 1, (int)patternType + 1);
     }
 
     // Update is called once per frame
