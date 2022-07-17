@@ -20,6 +20,10 @@ PrefabInstance:
       value: FrostHitParticle
       objectReference: {fileID: 0}
     - target: {fileID: 5052322029436284243, guid: 97bd73fba5def4849b1cc736f5124343, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5052322029436284243, guid: 97bd73fba5def4849b1cc736f5124343, type: 3}
       propertyPath: lengthInSec
       value: 1
       objectReference: {fileID: 0}
@@ -209,15 +213,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8254296941179677360, guid: 97bd73fba5def4849b1cc736f5124343, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8254296941179677360, guid: 97bd73fba5def4849b1cc736f5124343, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8254296941179677360, guid: 97bd73fba5def4849b1cc736f5124343, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8254296941179677360, guid: 97bd73fba5def4849b1cc736f5124343, type: 3}
       propertyPath: m_LocalRotation.w

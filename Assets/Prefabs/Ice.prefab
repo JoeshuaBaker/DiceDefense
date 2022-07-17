@@ -121,12 +121,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c4ff8d01ea27704683cda4e9bc09cd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileType: 0
+  projectileType: 1
   damage: 1
   range: 5
   fireRate: 1
   flySpeed: 3
   numEnemiesPierce: 0
+  hitParticle: {fileID: 1097876116154255650, guid: 74bdc8e635317b0458fcab6fe58d7313, type: 3}
+  explodeRadius: 2
+  slowPercentage: 0.9
+  slowDuration: 5
+  spikePeriod: 1
 --- !u!1001 &9175190286308711814
 PrefabInstance:
   m_ObjectHideFlags: 0

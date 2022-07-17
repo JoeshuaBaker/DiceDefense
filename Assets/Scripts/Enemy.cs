@@ -62,4 +62,10 @@ public class Enemy : MonoBehaviour
             Destroy(transform.parent.gameObject);
         }
     }
+
+    public void GetSlowed(float slow, float slowDuration)
+    {
+        slowPercent = slow;
+        this.slowDuration = slowDuration;
+    }
 }
