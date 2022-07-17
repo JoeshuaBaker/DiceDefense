@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1677930596" Language="SFX" Hash="975495119">
+		<SoundBank Id="1677930596" Language="SFX" Hash="3400244011">
 			<ObjectPath>\SoundBanks\Default Work Unit\DiceDefenders</ObjectPath>
 			<ShortName>DiceDefenders</ShortName>
 			<Path>DiceDefenders.bnk</Path>
@@ -25,7 +25,7 @@
 					<IncludedMemoryFiles>
 						<File Id="693422366" Language="SFX">
 							<ShortName>enemydie.wav</ShortName>
-							<Path>SFX\enemydie_10C4C929.wem</Path>
+							<Path>SFX\enemydie_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -33,7 +33,7 @@
 					<IncludedMemoryFiles>
 						<File Id="205922323" Language="SFX">
 							<ShortName>enemyhit.wav</ShortName>
-							<Path>SFX\enemyhit_10C4C929.wem</Path>
+							<Path>SFX\enemyhit_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -41,11 +41,11 @@
 					<IncludedMemoryFiles>
 						<File Id="577125863" Language="SFX">
 							<ShortName>Beep.wav</ShortName>
-							<Path>SFX\Beep_10C4C929.wem</Path>
+							<Path>SFX\Beep_3F75BDB9.wem</Path>
 						</File>
 						<File Id="827821555" Language="SFX">
 							<ShortName>Tail.wav</ShortName>
-							<Path>SFX\Tail_6DF29B91.wem</Path>
+							<Path>SFX\Tail_975B61C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -53,15 +53,15 @@
 					<IncludedMemoryFiles>
 						<File Id="88358828" Language="SFX">
 							<ShortName>crackle.wav</ShortName>
-							<Path>SFX\crackle_A2AF74F4.wem</Path>
+							<Path>SFX\crackle_DD105284.wem</Path>
 						</File>
 						<File Id="642788391" Language="SFX">
 							<ShortName>crackle3.wav</ShortName>
-							<Path>SFX\crackle3_A6D16FA1.wem</Path>
+							<Path>SFX\crackle3_7521B5F1.wem</Path>
 						</File>
 						<File Id="807866118" Language="SFX">
 							<ShortName>crackle2.wav</ShortName>
-							<Path>SFX\crackle2_A3C1E4BE.wem</Path>
+							<Path>SFX\crackle2_306C478E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -69,39 +69,39 @@
 					<IncludedMemoryFiles>
 						<File Id="78021377" Language="SFX">
 							<ShortName>Swoop3.wav</ShortName>
-							<Path>SFX\Swoop3_C0B0975A.wem</Path>
+							<Path>SFX\Swoop3_22FF008A.wem</Path>
 						</File>
 						<File Id="213763110" Language="SFX">
 							<ShortName>Freeze2.wav</ShortName>
-							<Path>SFX\Freeze2_6AE1AFB0.wem</Path>
+							<Path>SFX\Freeze2_F50290A0.wem</Path>
 						</File>
 						<File Id="227188210" Language="SFX">
 							<ShortName>Freeze3.wav</ShortName>
-							<Path>SFX\Freeze3_72FBCC52.wem</Path>
+							<Path>SFX\Freeze3_E63E9702.wem</Path>
 						</File>
 						<File Id="348723050" Language="SFX">
 							<ShortName>Magic2.wav</ShortName>
-							<Path>SFX\Magic2_3C28319D.wem</Path>
+							<Path>SFX\Magic2_A52DB8AD.wem</Path>
 						</File>
 						<File Id="398492661" Language="SFX">
 							<ShortName>Magic.wav</ShortName>
-							<Path>SFX\Magic_724654DE.wem</Path>
+							<Path>SFX\Magic_A549EE4E.wem</Path>
 						</File>
 						<File Id="787268208" Language="SFX">
 							<ShortName>Swoop.wav</ShortName>
-							<Path>SFX\Swoop_B0FD0CD6.wem</Path>
+							<Path>SFX\Swoop_298571A6.wem</Path>
 						</File>
 						<File Id="887727235" Language="SFX">
 							<ShortName>Swoop2.wav</ShortName>
-							<Path>SFX\Swoop2_2EAD6DC8.wem</Path>
+							<Path>SFX\Swoop2_490BC9D8.wem</Path>
 						</File>
 						<File Id="988927137" Language="SFX">
 							<ShortName>Freeze.wav</ShortName>
-							<Path>SFX\Freeze_49729CA2.wem</Path>
+							<Path>SFX\Freeze_0DA29092.wem</Path>
 						</File>
 						<File Id="990782159" Language="SFX">
 							<ShortName>Magic3.wav</ShortName>
-							<Path>SFX\Magic3_F732A4F8.wem</Path>
+							<Path>SFX\Magic3_2FF1A788.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -109,7 +109,7 @@
 					<IncludedMemoryFiles>
 						<File Id="884883331" Language="SFX">
 							<ShortName>bombhit.wav</ShortName>
-							<Path>SFX\bombhit_10C4C929.wem</Path>
+							<Path>SFX\bombhit_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -117,7 +117,7 @@
 					<IncludedMemoryFiles>
 						<File Id="885605500" Language="SFX">
 							<ShortName>fire.wav</ShortName>
-							<Path>SFX\fire_10C4C929.wem</Path>
+							<Path>SFX\fire_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -125,7 +125,7 @@
 					<IncludedMemoryFiles>
 						<File Id="314439610" Language="SFX">
 							<ShortName>Laser.wav</ShortName>
-							<Path>SFX\Laser_10C4C929.wem</Path>
+							<Path>SFX\Laser_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -134,15 +134,15 @@
 					<IncludedMemoryFiles>
 						<File Id="407120910" Language="SFX">
 							<ShortName>Build2.wav</ShortName>
-							<Path>SFX\Build2_10C4C929.wem</Path>
+							<Path>SFX\Build2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="541478416" Language="SFX">
 							<ShortName>Build1.wav</ShortName>
-							<Path>SFX\Build1_10C4C929.wem</Path>
+							<Path>SFX\Build1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="659108312" Language="SFX">
 							<ShortName>Build3.wav</ShortName>
-							<Path>SFX\Build3_10C4C929.wem</Path>
+							<Path>SFX\Build3_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -150,7 +150,7 @@
 					<IncludedMemoryFiles>
 						<File Id="299145500" Language="SFX">
 							<ShortName>Drop.wav</ShortName>
-							<Path>SFX\Drop_AAE66485.wem</Path>
+							<Path>SFX\Drop_BA97F055.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -158,7 +158,7 @@
 					<IncludedMemoryFiles>
 						<File Id="556627651" Language="SFX">
 							<ShortName>Pickup.wav</ShortName>
-							<Path>SFX\Pickup_91845143.wem</Path>
+							<Path>SFX\Pickup_D2DA3CB3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -166,7 +166,7 @@
 					<IncludedMemoryFiles>
 						<File Id="950880742" Language="SFX">
 							<ShortName>hit.wav</ShortName>
-							<Path>SFX\hit_10C4C929.wem</Path>
+							<Path>SFX\hit_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -174,19 +174,19 @@
 					<IncludedMemoryFiles>
 						<File Id="74964241" Language="SFX">
 							<ShortName>Fly2.wav</ShortName>
-							<Path>SFX\Fly2_038BF2E5.wem</Path>
+							<Path>SFX\Fly2_B2E62C35.wem</Path>
 						</File>
 						<File Id="375455987" Language="SFX">
 							<ShortName>Fly3.wav</ShortName>
-							<Path>SFX\Fly3_132E0AC5.wem</Path>
+							<Path>SFX\Fly3_3AD0A975.wem</Path>
 						</File>
 						<File Id="708485099" Language="SFX">
 							<ShortName>Fly.wav</ShortName>
-							<Path>SFX\Fly_BBB51E71.wem</Path>
+							<Path>SFX\Fly_12BB1A61.wem</Path>
 						</File>
 						<File Id="1056722438" Language="SFX">
 							<ShortName>Throw.wav</ShortName>
-							<Path>SFX\Throw_10C4C929.wem</Path>
+							<Path>SFX\Throw_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -194,47 +194,47 @@
 					<IncludedMemoryFiles>
 						<File Id="42381246" Language="SFX">
 							<ShortName>Dice6.wav</ShortName>
-							<Path>SFX\Dice6_10C4C929.wem</Path>
+							<Path>SFX\Dice6_3F75BDB9.wem</Path>
 						</File>
 						<File Id="165130169" Language="SFX">
 							<ShortName>Dice0.wav</ShortName>
-							<Path>SFX\Dice0_10C4C929.wem</Path>
+							<Path>SFX\Dice0_3F75BDB9.wem</Path>
 						</File>
 						<File Id="167084708" Language="SFX">
 							<ShortName>Dice2.wav</ShortName>
-							<Path>SFX\Dice2_10C4C929.wem</Path>
+							<Path>SFX\Dice2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="255029079" Language="SFX">
 							<ShortName>Dice1.wav</ShortName>
-							<Path>SFX\Dice1_10C4C929.wem</Path>
+							<Path>SFX\Dice1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="259496218" Language="SFX">
 							<ShortName>Dice4.wav</ShortName>
-							<Path>SFX\Dice4_10C4C929.wem</Path>
+							<Path>SFX\Dice4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="287523510" Language="SFX">
 							<ShortName>Dice7.wav</ShortName>
-							<Path>SFX\Dice7_10C4C929.wem</Path>
+							<Path>SFX\Dice7_3F75BDB9.wem</Path>
 						</File>
 						<File Id="446526278" Language="SFX">
 							<ShortName>Dice5.wav</ShortName>
-							<Path>SFX\Dice5_10C4C929.wem</Path>
+							<Path>SFX\Dice5_3F75BDB9.wem</Path>
 						</File>
 						<File Id="565692386" Language="SFX">
 							<ShortName>Dice.wav</ShortName>
-							<Path>SFX\Dice_10C4C929.wem</Path>
+							<Path>SFX\Dice_3F75BDB9.wem</Path>
 						</File>
 						<File Id="756291841" Language="SFX">
 							<ShortName>Dice9.wav</ShortName>
-							<Path>SFX\Dice9_10C4C929.wem</Path>
+							<Path>SFX\Dice9_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1016357997" Language="SFX">
 							<ShortName>Dice8.wav</ShortName>
-							<Path>SFX\Dice8_10C4C929.wem</Path>
+							<Path>SFX\Dice8_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1064903999" Language="SFX">
 							<ShortName>Dice3.wav</ShortName>
-							<Path>SFX\Dice3_10C4C929.wem</Path>
+							<Path>SFX\Dice3_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -250,7 +250,7 @@
 					<IncludedMemoryFiles>
 						<File Id="513884019" Language="SFX">
 							<ShortName>gunhit.wav</ShortName>
-							<Path>SFX\gunhit_10C4C929.wem</Path>
+							<Path>SFX\gunhit_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -258,19 +258,19 @@
 					<IncludedMemoryFiles>
 						<File Id="80771577" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_1739914D.wem</Path>
+							<Path>SFX\gun_CDF3091D.wem</Path>
 						</File>
 						<File Id="84667249" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_88A90789.wem</Path>
+							<Path>SFX\gun_2EBDA099.wem</Path>
 						</File>
 						<File Id="489322990" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_1590FE9C.wem</Path>
+							<Path>SFX\gun_7E17F50C.wem</Path>
 						</File>
 						<File Id="757506751" Language="SFX">
 							<ShortName>gun.wav</ShortName>
-							<Path>SFX\gun_43BAC151.wem</Path>
+							<Path>SFX\gun_214748A1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
