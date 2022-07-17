@@ -14,7 +14,6 @@ public class BoomerangProjectile : Projectile
     public override void OnEnemyCollide(Enemy enemy)
     {
         enemy.GetHit(data.damage);
-        Debug.Log("hit " + enemy.name);
     }
 
     public override void Init(ProjectileData data)

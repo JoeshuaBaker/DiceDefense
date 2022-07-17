@@ -6,7 +6,11 @@ public class AimedPattern : ShotPattern
 {
     public override bool Shoot(Projectile projectile, ProjectileData projectileData)
     {
-        throw new System.NotImplementedException();
+        Projectile projInstance = Instantiate(projectile, bulletParent);
+        projectileData.initialDirection = projectileData.aimTarget.position - projectileData.tower.transform.position;
+        projectileData.initialDirection = projectileData.initialDirection.normalized;
+        projInstance.Init(projectileData);
+        return true;
     }
 
     // Start is called before the first frame update

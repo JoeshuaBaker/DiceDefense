@@ -22,8 +22,8 @@ public abstract class Projectile : MonoBehaviour
     public float flySpeed;
     public int numEnemiesPierce;
     public ProjectileData data;
-    private float distanceTraveled;
-    private float timer;
+    protected float distanceTraveled;
+    protected float timer;
     protected Vector3 initialDirection;
 
     public virtual void Init(ProjectileData data)
@@ -38,8 +38,7 @@ public abstract class Projectile : MonoBehaviour
         {
             transform.Rotate(new Vector3(0, 0, 90));
         }
-        initialDirection = data.target.transform.position - this.transform.position;
-        initialDirection = initialDirection.normalized;
+        initialDirection = data.initialDirection;
     }
 
     private void OnTriggerEnter(Collider collider)
@@ -55,7 +54,7 @@ public abstract class Projectile : MonoBehaviour
     {
         timer += Time.deltaTime;
         distanceTraveled = timer * flySpeed;
-        if(distanceTraveled > data.range)
+        if(distanceTraveled > data.range/2)
         {
             Destroy(gameObject);
         }
