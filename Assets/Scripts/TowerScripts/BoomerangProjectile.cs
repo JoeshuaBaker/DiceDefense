@@ -43,7 +43,7 @@ public class BoomerangProjectile : Projectile
         Vector3 speed = initialDirection * Mathf.Max(travelCurve.Evaluate(t), minSpeed) * Time.deltaTime * flySpeed;
         this.transform.position = this.transform.position + speed;
         
-        if(t < 0.1f && !outIn)
+        if(t < 0.25f && !outIn)
         {
             data.tower.fireSignal = true;
             Destroy(this.gameObject);

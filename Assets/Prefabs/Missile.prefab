@@ -91,8 +91,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7402030316159887187}
-  - component: {fileID: 5529608935689108795}
-  - component: {fileID: 746560872068113487}
   - component: {fileID: 8843385990610392125}
   - component: {fileID: 3261266644251881536}
   m_Layer: 6
@@ -118,56 +116,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5529608935689108795
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775640659468146389}
-  m_Mesh: {fileID: -3010528872761018721, guid: 6bebfd71411f5a042a367d65b69d4818, type: 3}
---- !u!23 &746560872068113487
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775640659468146389}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2236198827686337420, guid: 6bebfd71411f5a042a367d65b69d4818, type: 3}
-  - {fileID: -4690126282807672479, guid: 6bebfd71411f5a042a367d65b69d4818, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &8843385990610392125
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -201,6 +149,7 @@ MonoBehaviour:
   numEnemiesPierce: 0
   hitParticle: {fileID: 864620204023099407, guid: 62cdf65e6b60a1e409dd5696218eb163, type: 3}
   explodeRadius: 2.5
+  meshRenderer: {fileID: 5311313005173098125}
 --- !u!1001 &5978480471064317826
 PrefabInstance:
   m_ObjectHideFlags: 0

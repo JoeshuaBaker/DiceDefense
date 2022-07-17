@@ -196,7 +196,7 @@ MonoBehaviour:
   damage: 10
   range: 5
   fireRate: 1
-  flySpeed: 10
+  flySpeed: 20
   numEnemiesPierce: 0
 --- !u!54 &8431404866178466075
 Rigidbody:

@@ -1,3 +1,5 @@
+using UnityEngine;
+
 [System.Serializable]
 public class WaveData 
 {
@@ -46,16 +48,22 @@ public class WaveData
         EnemyData data = enemies[enemyId];
         if(data.count > 0)
         {
+            TowerUI.instance.skipButton.gameObject.SetActive(false);
             return diff > data.time;
         }
         else
         {
+            TowerUI.instance.skipButton.gameObject.SetActive(true);
             return diff > restTime;
         }
     }
 
     public EnemyData Spawn(float time)
     {
+        if(enemyId < 0 || enemyId >= enemies.Length)
+        {
+            Debug.Log("Tried to access id: " + enemyId);   
+        }
         EnemyData currentEnemy = enemies[enemyId];
         if(currentEnemy.count > 0)
         {

@@ -103,10 +103,13 @@ MonoBehaviour:
     speed: 0
     count: 1
     time: 1
+  diceParticle: {fileID: 3478342887370540757, guid: 85d85d4cdbd3a9c4e848938001434889, type: 3}
   finished: 0
   slowPercent: 0
+  slowDuration: 0
   pathLength: 0
   timeToComplete: 0
+  progress: 0
 --- !u!64 &-288843303891444685
 MeshCollider:
   m_ObjectHideFlags: 0

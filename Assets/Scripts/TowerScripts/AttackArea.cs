@@ -16,12 +16,12 @@ public class AttackArea
 
     public static (float, float)[] multipliers = new (float, float)[]
     {
-        (.25f, 2.0f),
-        (.66f, 1.25f),
-        (.9f, 1.05f),
+        (.5f, 2.0f),
+        (.75f, 1.25f),
+        (.95f, 1.05f),
         (1.25f, .9f),
         (1.75f, .8f),
-        (2.5f, .6f)
+        (2.5f, .65f)
     };
     public AreaType areaType = AreaType.Fast;
     public float rangeModifier = 1.0f;

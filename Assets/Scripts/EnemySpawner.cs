@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     public WaveData[] waves;
     public bool spawning;
     public int waveId = -1;
-    private WaveData currentWave = null;
+    public WaveData currentWave = null;
     private bool whiteBlack = true;
     private float timer = 0f;
 
@@ -38,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
         {
             timer += Time.deltaTime;
             //Handle moving to the next wave...
-            if(currentWave == null || currentWave.finished)
+            if(currentWave == null || currentWave.enemies.Length == 0|| currentWave.finished)
             {
                 waveId++;
                 if(waveId >= waves.Length)
@@ -76,6 +76,14 @@ public class EnemySpawner : MonoBehaviour
                 prefab.Init(enemy);
                 
             }
+        }
+    }
+
+    public void Skip()
+    {
+        if(currentWave != null)
+        {
+            currentWave.restTime = 0f;
         }
     }
 }

@@ -6,7 +6,7 @@ public class MissileProjectile : Projectile
 {
     public GameObject hitParticle;
     public float explodeRadius = 0.5f;
-    private MeshRenderer meshRenderer;
+    public MeshRenderer meshRenderer;
     private bool isDead = false;
     private float deadTime = 0f;
     //explode in large radius, dealing damage to all enemies hit
@@ -36,8 +36,6 @@ public class MissileProjectile : Projectile
     void Start()
     {
         AkSoundEngine.PostEvent("MissileShoot", gameObject);
-
-        meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
 
     // Update is called once per frame
