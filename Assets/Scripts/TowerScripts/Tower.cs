@@ -47,6 +47,11 @@ public class Tower : MonoBehaviour
         currentPattern.bulletParent = projectileParent;
         waitToFire = currentProjectile.projectileType == Projectile.ProjectileType.Boomerang;
         fireSignal = waitToFire;
+        if (patternType == ShotPattern.PatternType.Aimed)
+        {
+            Vector3 closestPathPoint = TowerManager.instance.GetClosestPointOnPath(transform.position);
+            aimTarget.position = closestPathPoint;
+        }
     }
 
     // Update is called once per frame
@@ -54,6 +59,21 @@ public class Tower : MonoBehaviour
     {
         CheckTypes();
         timer += Time.deltaTime;
+
+        if (patternType == ShotPattern.PatternType.Aimed && aimToggle)
+        {
+            aimTarget.gameObject.SetActive(true);
+            Vector3 worldpoint;
+            RectTransformUtility.ScreenPointToWorldPointInRectangle(TowerUI.instance.canvas.GetComponent<RectTransform>(), Input.mousePosition, Camera.main, out worldpoint);
+            aimTarget.transform.position = worldpoint;
+            aimTarget.transform.position = new Vector3(aimTarget.transform.position.x, this.transform.position.y, aimTarget.transform.position.z);
+            if (Input.GetMouseButtonUp(0))
+            {
+                aimToggle = false;
+                aimTarget.gameObject.SetActive(false);
+            }
+        }
+
         finalRange = currentProjectile.range;
         finalRange *= currentArea.rangeModifier;
         finalRange *= currentPattern.rangeMultiplier;
@@ -155,12 +175,18 @@ public class Tower : MonoBehaviour
         baseDice.ShowFace(bottom);
         spireDice.ShowFace(spire);
         parapetDice.ShowFace(parapet);
+
+        if(patternType == ShotPattern.PatternType.Aimed)
+        {
+            Vector3 closestPathPoint = TowerManager.instance.GetClosestPointOnPath(transform.position);
+            aimTarget.position = closestPathPoint;
+        }
     }
 
     public void OnMouseOver()
     {
         TowerUI.instance.ShowText((int)projectileType + 1, (int)areaType + 1, (int)patternType + 1);
-        if(patternType == ShotPattern.PatternType.Aimed)
+        if(patternType == ShotPattern.PatternType.Aimed && !aimToggle)
         {
             aimTarget.gameObject.SetActive(true);
         }
@@ -170,25 +196,18 @@ public class Tower : MonoBehaviour
     public void OnMouseExit()
     {
         radius.gameObject.SetActive(false);
-        if (patternType == ShotPattern.PatternType.Aimed)
+        if (patternType == ShotPattern.PatternType.Aimed && !aimToggle)
         {
-            aimTarget.gameObject.SetActive(true);
+            aimTarget.gameObject.SetActive(false);
         }
         TowerUI.instance.ShowText();
     }
 
-    /*
     public void OnMouseDown()
     {
         if (patternType == ShotPattern.PatternType.Aimed)
         {
-            if(aimToggle)
-            {
-                aimToggle = false;
-            }
-
             aimToggle = true;
         }
     }
-    */
 }

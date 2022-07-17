@@ -6,6 +6,7 @@ public class TowerUI : MonoBehaviour
 {
     public static TowerUI instance;
 
+    public Canvas canvas;
     public DiceText baseText;
     public DiceText spiresText;
     public DiceText parapetsText;
