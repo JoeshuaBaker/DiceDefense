@@ -13,12 +13,20 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ENEMYDIE = 794424115U;
+        static const AkUniqueID ENEMYHIT = 391172934U;
+        static const AkUniqueID HOMESHOT = 453982812U;
         static const AkUniqueID ICEHIT = 3694142913U;
         static const AkUniqueID ICESHOOT = 1091888827U;
         static const AkUniqueID MISSILEHIT = 2305532690U;
         static const AkUniqueID MISSILESHOOT = 3974466484U;
+        static const AkUniqueID PIERCESHOOT = 3111943238U;
+        static const AkUniqueID PIERCESTOP = 1740006757U;
+        static const AkUniqueID PLAY_DROP = 2007351433U;
+        static const AkUniqueID PLAY_PICKUP = 3860455926U;
         static const AkUniqueID RANGHIT = 415148874U;
         static const AkUniqueID RANGSHOOT = 2873631388U;
+        static const AkUniqueID ROLLDICE = 2168124593U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
         static const AkUniqueID STDHIT = 2580790811U;
         static const AkUniqueID STDSHOOT = 2748335401U;

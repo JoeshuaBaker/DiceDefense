@@ -29,6 +29,9 @@ public class Dicebag : MonoBehaviour
 
     public void SpawnDice()
     {
+        AkSoundEngine.PostEvent("RollDice", gameObject);
+
+
         (float, float) spawnPos = points[index++];
         index %= points.Length;
         Instantiate(diceSprite, this.transform.position + new Vector3(spawnPos.Item1, 0, spawnPos.Item2), Quaternion.Euler(90, 0, 0), transform);

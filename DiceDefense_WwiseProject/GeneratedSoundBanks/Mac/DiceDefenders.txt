@@ -1,13 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
+	391172934	EnemyHit			\Default Work Unit\Enemy\EnemyHit	
 	415148874	RangHit			\Default Work Unit\Projectiles\Boomerang\RangHit	
+	453982812	HomeShot			\Default Work Unit\Projectiles\HomeShot	
+	794424115	EnemyDie			\Default Work Unit\Enemy\EnemyDie	
 	1091888827	IceShoot			\Default Work Unit\Projectiles\Ice\IceShoot	
+	1740006757	PierceStop			\Default Work Unit\Projectiles\Pierce\PierceStop	
 	1917263390	StopMusic			\Default Work Unit\StopMusic	
+	2007351433	Play_Drop			\Default Work Unit\Play_Drop	
+	2168124593	RollDice			\Default Work Unit\RollDice	
 	2305532690	MissileHit			\Default Work Unit\Projectiles\Missile\MissileHit	
 	2580790811	StdHit			\Default Work Unit\Projectiles\Std\StdHit	
 	2748335401	StdShoot			\Default Work Unit\Projectiles\Std\StdShoot	
 	2873631388	RangShoot			\Default Work Unit\Projectiles\Boomerang\RangShoot	
+	3111943238	PierceShoot			\Default Work Unit\Projectiles\Pierce\PierceShoot	
 	3694142913	IceHit			\Default Work Unit\Projectiles\Ice\IceHit	
 	3827058668	StartMusic			\Default Work Unit\StartMusic	
+	3860455926	Play_Pickup			\Default Work Unit\Play_Pickup	
 	3974466484	MissileShoot			\Default Work Unit\Projectiles\Missile\MissileShoot	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -24,25 +32,42 @@ Switch	ID	Name	Switch Group			Notes
 Effect plug-ins	ID	Name	Type				Notes
 	819943492	Fear_no_Evil	Wwise Harmonizer			
 	981474296	Small_Wooden_Room1 (Custom)	Wwise Matrix Reverb			
+	3487820010	One_Tap_Half_Second	Wwise Delay			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	42381246	Dice6	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice6		95204
 	74964241	Fly2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Fly2_038BF2E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly2		137912
 	78021377	Swoop3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Swoop3_C0B0975A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Swoop\Swoop3		41188
 	80771577	gun_04	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\gun_1739914D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_04		158040
 	84667249	gun_02	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\gun_88A90789.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_02		100244
 	88358828	crackle	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\crackle_A2AF74F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Ice\Crackle\crackle		159956
+	165130169	Dice0	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice0_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice0		90524
+	167084708	Dice2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice2		61000
+	205922323	Hit	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\enemyhit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Hit		43520
 	213763110	Freeze2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Freeze2_6AE1AFB0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Freeze\Freeze2		89040
 	227188210	Freeze3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Freeze3_72FBCC52.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Freeze\Freeze3		94532
+	255029079	Dice1	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice1		69156
+	259496218	Dice4	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice4		96764
+	287523510	Dice7	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice7		70248
+	299145500	Drop	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Drop_AAE66485.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterface\Drop		85388
+	314439610	Pierce	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Laser_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Piercing\Pierce		186432
 	348723050	Magic2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Magic2_3C28319D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Magic\Magic2		82584
 	375455987	Fly3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Fly3_132E0AC5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly3		129892
 	398492661	Magic	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Magic_724654DE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Magic\Magic		128460
+	446526278	Dice5	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice5		81732
 	489322990	gun_01	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\gun_1590FE9C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_01		107948
 	513884019	StdHit	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\gunhit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\StdHit		27848
+	556627651	Pickup	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Pickup_91845143.wem		\Actor-Mixer Hierarchy\Default Work Unit\UserInterface\Pickup		78904
+	565692386	Dice	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice		79608
+	577125863	Beep	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Beep_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Homing\Beeps\Beep		43968
 	642788391	crackle3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\crackle3_A6D16FA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Ice\Crackle\crackle3		154860
+	693422366	Die	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\enemydie_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Die		74864
 	708485099	Fly	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Fly_BBB51E71.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Flight\Fly		133988
+	756291841	Dice9	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice9		64296
 	757506751	gun_03	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\gun_43BAC151.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Std\GunShoot\gun_03		104096
 	787268208	Swoop	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Swoop_B0FD0CD6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Swoop\Swoop		39552
 	807866118	crackle2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\crackle2_A3C1E4BE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Ice\Crackle\crackle2		172092
+	827821555	Tail	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Tail_6DF29B91.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Homing\Tail		91668
 	884883331	bombhit	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\bombhit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\HIt\Bomb\bombhit		346272
 	885605500	fire	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\fire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Bomb\Fire\fire		258652
 	887727235	Swoop2	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Swoop2_2EAD6DC8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Swoop\Swoop2		31936
@@ -50,5 +75,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	981033162	CartoonBattle	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Cartoon Battle_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Kevin\Macleod\CartoonBattle		19510336
 	988927137	Freeze	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Freeze_49729CA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Freeze\Freeze		103464
 	990782159	Magic3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Magic3_F732A4F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Ice\Magic\Magic3		141956
+	1016357997	Dice8	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice8		64012
 	1056722438	Throw	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Throw_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tower\Shoot\Boomerang\Throw		33356
+	1064903999	Dice3	C:\Users\Tiller\Documents\__PERSONAL\_GITHUB\DiceDefense\DiceDefense_WwiseProject\.cache\Mac\SFX\Dice3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DiceRolls\RollDice\Dice3		66672
 

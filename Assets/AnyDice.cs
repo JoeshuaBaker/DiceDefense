@@ -28,11 +28,15 @@ public class AnyDice : MonoBehaviour
 
     public void OnMouseDrag()
     {
+        AkSoundEngine.PostEvent("Play_Pickup", gameObject);
+
         diceSprite.OnDrag();
     }
 
     public void OnMouseUp()
     {
+        AkSoundEngine.PostEvent("Play_Drop", gameObject);
+
         diceSprite.OnEndDrag();
     }
 

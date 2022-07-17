@@ -87,6 +87,8 @@ public class DiceSprite : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+
+        AkSoundEngine.PostEvent("Play_Pickup", gameObject);
         //throw new System.NotImplementedException();
     }
 
@@ -143,6 +145,8 @@ public class DiceSprite : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
     {
         if(anyDice.gameObject.activeSelf)
         {
+            AkSoundEngine.PostEvent("Play_Drop", gameObject);
+
             towerBuilder.Dropped();
         }
     }

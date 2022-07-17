@@ -60,9 +60,12 @@ public class Enemy : MonoBehaviour
 
     public void GetHit(float damage)
     {
+        AkSoundEngine.PostEvent("EnemyHit", gameObject);
+
         data.hp -= damage;
         if(data.hp <= 0)
         {
+            AkSoundEngine.PostEvent("EnemyDie", gameObject);
             Destroy(transform.parent.gameObject);
         }
     }

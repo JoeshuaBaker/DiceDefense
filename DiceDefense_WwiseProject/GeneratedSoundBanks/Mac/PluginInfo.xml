@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="DiceDefense_WwiseProject" Platform="Mac" BasePlatform="Mac">
 	<Plugins>
+		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay" StaticLib="AkDelayFX"/>
 		<Plugin Name="Wwise Matrix Reverb" ID="7536643" DLL="AkMatrixReverb" StaticLib="AkMatrixReverbFX"/>
 		<Plugin Name="Wwise Harmonizer" ID="9043971" DLL="AkHarmonizer" StaticLib="AkHarmonizerFX"/>
 		<Plugin Name="System" ID="11403271"/>

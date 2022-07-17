@@ -46,4 +46,9 @@ public class HomingProjectile : Projectile
             Destroy(gameObject);
         }
     }
+
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("HomeShot", gameObject);
+    }
 }
