@@ -69,16 +69,12 @@ public class Enemy : MonoBehaviour
         data.hp -= damage;
         if(data.hp <= 0)
         {
-<<<<<<< Updated upstream
             AkSoundEngine.PostEvent("EnemyDie", gameObject);
-=======
             if(TowerUI.instance.GetDiceScore(this.maxHp*(int)data.speed))
             {
                 GameObject dp = Instantiate(diceParticle, transform.parent.parent);
                 Destroy(dp, 1.5f);
             }
-
->>>>>>> Stashed changes
             Destroy(transform.parent.gameObject);
         }
     }
