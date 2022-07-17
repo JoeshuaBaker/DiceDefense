@@ -15,11 +15,13 @@ public abstract class Projectile : MonoBehaviour
         Homing
     }
 
-    public ProjectileType type;
-    public int damage;
-    public int range;
-    public int fireRate;
+    public ProjectileType projectileType;
+    public float damage;
+    public float range;
+    public float fireRate;
+    public float flySpeed;
     public int numEnemiesPierce;
+    private float distanceTraveled;
 
     public abstract void OnEnemyCollide(Enemy enemy);
 }

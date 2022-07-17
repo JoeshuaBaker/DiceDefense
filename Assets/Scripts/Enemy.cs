@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
             }
 
             Vector3 point = data.path.GetPointAt(progress);
-            this.transform.position = point;
+            this.transform.parent.position = point;
         }
     }
 

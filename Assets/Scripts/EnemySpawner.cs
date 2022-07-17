@@ -66,7 +66,13 @@ public class EnemySpawner : MonoBehaviour
                 int prefabIndex = ((int)type) * 2 + ((whiteBlack) ? 0 : 1);
                 enemy.path = path;
                 whiteBlack = !whiteBlack;
-                Enemy prefab = Instantiate(enemyBase[prefabIndex], enemyParent, false);
+                GameObject prefabParent = new GameObject();
+                prefabParent.transform.parent = enemyParent;
+                prefabParent.transform.localPosition = Vector3.zero;
+                prefabParent.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                prefabParent.transform.localScale = Vector3.one;
+                Enemy prefab = Instantiate(enemyBase[prefabIndex], prefabParent.transform, false);
+                prefabParent.name = prefab.name + " Parent";
                 prefab.Init(enemy);
                 
             }

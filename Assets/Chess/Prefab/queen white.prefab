@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -7926255701564970363}
   - component: {fileID: 5452644959360108806}
   - component: {fileID: -1575071228165188801}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: queen white
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -4,44 +4,55 @@ using UnityEngine;
 
 public class AttackArea
 {
-    public float rangeModifier = 1.0f;
-    public float attackSpeedModifier = 1.0f;
-
-    public void Init(int number)
+    public enum AreaType
     {
-        switch(number)
+        Fastest,
+        Faster,
+        Fast,
+        Range,
+        Ranger,
+        Rangest
+    }
+    public AreaType areaType = AreaType.Fast;
+    public float rangeModifier = 1.0f;
+    public float fireRateMultiplier = 1.0f;
+
+    public void Init(AreaType type)
+    {
+        switch((int)type + 1)
         {
             case 1:
                 rangeModifier = .25f;
-                attackSpeedModifier = 2.0f;
+                fireRateMultiplier = 2.0f;
                 break;
             case 2:
                 rangeModifier = .66f;
-                attackSpeedModifier = 1.25f;
+                fireRateMultiplier = 1.25f;
                 break;
 
             case 3:
                 rangeModifier = .9f;
-                attackSpeedModifier = 1.05f;
+                fireRateMultiplier = 1.05f;
                 break;
 
             case 4:
                 rangeModifier = 1.25f;
-                attackSpeedModifier = .9f;
+                fireRateMultiplier = .9f;
                 break;
 
             case 5:
                 rangeModifier = 1.75f;
-                attackSpeedModifier = .8f;
+                fireRateMultiplier = .8f;
                 break;
 
             case 6:
                 rangeModifier = 2.5f;
-                attackSpeedModifier = .6f;
+                fireRateMultiplier = .6f;
                 break;
 
             default:
-                break;
+                return;
         }
+        areaType = type;
     }
 }

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 3837883707324887071}
   - component: {fileID: 900729314988645328}
   - component: {fileID: 6594030326285405753}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: king black
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -9038905333357596082}
   - component: {fileID: -5245536132895350672}
   - component: {fileID: 3733158128103239761}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: queen black
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -10,10 +10,14 @@ public abstract class ShotPattern : MonoBehaviour
         FrontBack,
         Tri,
         Aimed,
-        Artillery,
+        Random,
         Radial
     }
 
-    public PatternType pattern;
+    public PatternType patternType;
+    public float damageMultiplier = 1.0f;
+    public float rangeMultiplier = 1.0f;
+    public float fireRateMultiplier = 1.0f;
 
+    public abstract bool Shoot(Projectile projectile);
 }

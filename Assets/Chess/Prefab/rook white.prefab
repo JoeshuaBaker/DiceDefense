@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -5093283600546118899}
   - component: {fileID: -4087246139184867631}
   - component: {fileID: -3551517343554377951}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: rook white
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
